@@ -1,11 +1,578 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x73df550" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x18580d0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x73df550" />
-  <item nodeId="node-0x73df550">
+  <activeNode nodeId="node-0xfb42cf0" />
+  <item nodeId="node-0x18580d0">
     <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+The ringing of your alarm clock wakes you up. You get out of bed to find that none of your fellow crew members are in the crew&apos;s quarters. They probably just went to breakfast. You had hoped for a cushy engineering job on Earth, but the UNSA had other plans for your career. It&apos;s been two years since you were assigned to this ship, and your team hasn&apos;t been able to find any sign of alien life in the cosmos. As you are changing from your pajamas into your uniform, you hear a loud voice booming from the intercom.
+
+Houston, We Have a Problem
+An Interactive Fiction by Leo Kodish
+Release 1 / Serial number 140219 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="75">NO</temporary>
+    <children>
+      <child nodeId="node-0x8f5cde0" />
+      <child nodeId="node-0xfcf62c0" />
+      <child nodeId="node-0x8dd3990" />
+      <child nodeId="node-0xfcec100" />
+      <child nodeId="node-0xfc99fa0" />
+      <child nodeId="node-0xfbd1100" />
+    </children>
+  </item>
+  <item nodeId="node-0xfbd1100">
+    <command xml:space="preserve">look under bved</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="0">NO</temporary>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0xfbe0950" />
+    </children>
+  </item>
+  <item nodeId="node-0xfbe0950">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bebc40" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bebc40">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
+    <children>
+      <child nodeId="node-0xfbf1c00" />
+    </children>
+  </item>
+  <item nodeId="node-0xfbf1c00">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">The textbook was all you kept down here. There&apos;s nothing else.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+  </item>
+  <item nodeId="node-0xfc99fa0">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">
+Maintenance Room
+A room where the engine is located and maintained.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc82740" />
+      <child nodeId="node-0x12281cf0" />
+      <child nodeId="node-0x98cee40" />
+    </children>
+  </item>
+  <item nodeId="node-0x98cee40">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xfb38040" />
+    </children>
+  </item>
+  <item nodeId="node-0xfb38040">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xc70ebf0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc70ebf0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x12288c40" />
+    </children>
+  </item>
+  <item nodeId="node-0x12288c40">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x9860680" />
+    </children>
+  </item>
+  <item nodeId="node-0x9860680">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x122b9540" />
+    </children>
+  </item>
+  <item nodeId="node-0x122b9540">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x122a24f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x122a24f0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xc8053f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xc8053f0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xfb41a90" />
+    </children>
+  </item>
+  <item nodeId="node-0xfb41a90">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x122b4460" />
+    </children>
+  </item>
+  <item nodeId="node-0x122b4460">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xfb2e750" />
+    </children>
+  </item>
+  <item nodeId="node-0xfb2e750">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x9839fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x9839fe0">
+    <command xml:space="preserve">eastw</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x9811720" />
+    </children>
+  </item>
+  <item nodeId="node-0x9811720">
+    <command xml:space="preserve">east</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x8dc48c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8dc48c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+A room where the engine is located and maintained.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0x122c7c20" />
+    </children>
+  </item>
+  <item nodeId="node-0x122c7c20">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xfbc2270" />
+    </children>
+  </item>
+  <item nodeId="node-0xfbc2270">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+A room where the engine is located and maintained.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="75">YES</temporary>
+    <children>
+      <child nodeId="node-0xfb42cf0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfb42cf0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="74">YES</temporary>
+  </item>
+  <item nodeId="node-0x12281cf0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Maintenance Room
+A room where the engine is located and maintained.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x98f02e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x98f02e0">
+    <command xml:space="preserve">east</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="57">YES</temporary>
+    <children>
+      <child nodeId="node-0x122afb40" />
+    </children>
+  </item>
+  <item nodeId="node-0x122afb40">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">
+Maintenance Room
+A room where the engine is located and maintained.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+  </item>
+  <item nodeId="node-0xfc82740">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">You see nothing special about the Engine.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="45">YES</temporary>
+  </item>
+  <item nodeId="node-0xfcec100">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="53">YES</temporary>
+    <children>
+      <child nodeId="node-0x1803c80" />
+      <child nodeId="node-0xfbe2700" />
+    </children>
+  </item>
+  <item nodeId="node-0xfbe2700">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">The textbook was all you kept down here. There&apos;s nothing else.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="53">YES</temporary>
+    <children>
+      <child nodeId="node-0xfb57810" />
+    </children>
+  </item>
+  <item nodeId="node-0xfb57810">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">The textbook was all you kept down here. There&apos;s nothing else.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="52">YES</temporary>
+  </item>
+  <item nodeId="node-0x1803c80">
+    <command xml:space="preserve">take textbook</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x9829500" />
+    </children>
+  </item>
+  <item nodeId="node-0x9829500">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a ship maintenance textbook
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x98ef930" />
+    </children>
+  </item>
+  <item nodeId="node-0x98ef930">
+    <command xml:space="preserve">x textbook</command>
+    <result xml:space="preserve">You see nothing special about the ship maintenance textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0xfcc4e60" />
+    </children>
+  </item>
+  <item nodeId="node-0xfcc4e60">
+    <command xml:space="preserve">read textbook</command>
+    <result xml:space="preserve">You see nothing special about the ship maintenance textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="31">YES</temporary>
+  </item>
+  <item nodeId="node-0x8dd3990">
+    <command xml:space="preserve">look under bunk</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="27">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b87c20" />
+      <child nodeId="node-0xfcef6b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfcef6b0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your engineering textbook under your bed.
+
+You can see a ship maintenance textbook here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="18">YES</temporary>
+  </item>
+  <item nodeId="node-0x1b87c20">
+    <command xml:space="preserve">look under bunk</command>
+    <result xml:space="preserve">The textbook was all you kept down here. There&apos;s nothing else.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="27">YES</temporary>
+    <children>
+      <child nodeId="node-0x988ea50" />
+    </children>
+  </item>
+  <item nodeId="node-0x988ea50">
+    <command xml:space="preserve">look under bunk</command>
+    <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="26">YES</temporary>
+  </item>
+  <item nodeId="node-0xfcf62c0">
+    <command xml:space="preserve">x bunk</command>
+    <result xml:space="preserve">Your bed
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+    <children>
+      <child nodeId="node-0x9859ff0" />
+    </children>
+  </item>
+  <item nodeId="node-0x9859ff0">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+    <children>
+      <child nodeId="node-0xfb7c210" />
+    </children>
+  </item>
+  <item nodeId="node-0xfb7c210">
+    <command xml:space="preserve">look under bunk</command>
+    <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+    <children>
+      <child nodeId="node-0xfce4240" />
+    </children>
+  </item>
+  <item nodeId="node-0xfce4240">
+    <command xml:space="preserve">look under ed</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+    <children>
+      <child nodeId="node-0xfb88580" />
+    </children>
+  </item>
+  <item nodeId="node-0xfb88580">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="23">YES</temporary>
+  </item>
+  <item nodeId="node-0x8f5cde0">
+    <command xml:space="preserve">x textbook</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x8fcfe60" />
+    </children>
+  </item>
+  <item nodeId="node-0x8fcfe60">
+    <command xml:space="preserve">under bed</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0xc717100" />
+    </children>
+  </item>
+  <item nodeId="node-0xc717100">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="40">YES</temporary>
+    <children>
+      <child nodeId="node-0x8dcd980" />
+    </children>
+  </item>
+  <item nodeId="node-0x8dcd980">
+    <command xml:space="preserve">x textbook</command>
+    <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on the space ship.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="39">YES</temporary>
   </item>
 </Skein>
