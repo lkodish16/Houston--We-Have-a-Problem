@@ -9,16 +9,31 @@ Crew's Quarters is a room. "This is the room you have shared with your fellow as
 The bunk is a scenery in the Crew's Quarters. "Your bed". 
 Understand "bed" as bunk.
 
-The ship maintenance textbook is a thing. It is a closed openable container.The description is "It's a guide on how to fix any maintenance problem that may occur while on the space ship.". 
+The ship maintenance textbook is a thing. It is a closed openable container.The description is "It's a guide on how to fix any maintenance problem that may occur while on board the space ship.".
+
+After opening the textbook: 
+	say "You flip to the part of the book that deals with how to fix a broken nitrogen compressor, and discover that it can be fixed by using the following items: Antenna, Wrench, Screwdriver, and Duct Tape.".
 
 Instead of looking under the bunk for the first time:
 	move the ship maintenance textbook to the Crew's Quarters;
-	say "You find the ship maintenance textbook you had been reading before bed."
+	say "You find the ship maintenance textbook you had been reading before bed." 
 	
 Instead of looking under the bunk for more than the first time:
 	say "The textbook was all you kept down here. There's nothing else.".	
 
-The Maintenance Room is a room. It is west of the Crew's Quarters. "A room where the engine is located and maintained."
+The Maintenance Room is a room. It is west of the Crew's Quarters. "The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong."
 
-The Engine is scenery in the Maintenance Room. 
+The Engine is scenery in the Maintenance Room. "The standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large 'United Nations Space Association' sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.". 
+
+
+
+
+
+
+
+
+
+
+
+
 
