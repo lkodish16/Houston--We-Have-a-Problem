@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x13a3ee20" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x159a5510" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x13a3ee20" />
-  <item nodeId="node-0x13a3ee20">
+  <activeNode nodeId="node-0x188443c0" />
+  <item nodeId="node-0x159a5510">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,7 +12,7 @@ The ringing of your alarm clock wakes you up. You get out of bed to find that no
 
 Houston, We Have a Problem
 An Interactive Fiction by Leo Kodish
-Release 1 / Serial number 140221 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140224 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Crew&apos;s Quarters
 This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
@@ -20,18 +20,17 @@ This is the room you have shared with your fellow astronauts for the last two ye
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="154">NO</temporary>
+    <temporary score="239">NO</temporary>
     <children>
-      <child nodeId="node-0x188795a0" />
-      <child nodeId="node-0x18879290" />
-      <child nodeId="node-0x188790d0" />
-      <child nodeId="node-0x167acfe0" />
-      <child nodeId="node-0x18878610" />
-      <child nodeId="node-0x13a3ee70" />
-      <child nodeId="node-0x18879530" />
+      <child nodeId="node-0x18c8fca0" />
+      <child nodeId="node-0x18c8fa00" />
+      <child nodeId="node-0x18c8ef70" />
+      <child nodeId="node-0x18c7a660" />
+      <child nodeId="node-0x15960670" />
+      <child nodeId="node-0x159a5560" />
     </children>
   </item>
-  <item nodeId="node-0x18879530">
+  <item nodeId="node-0x159a5560">
     <command xml:space="preserve">take textbook</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -40,7 +39,7 @@ This is the room you have shared with your fellow astronauts for the last two ye
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
   </item>
-  <item nodeId="node-0x13a3ee70">
+  <item nodeId="node-0x15960670">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -48,14 +47,55 @@ The room that holds the engine of the space ship. The lights are flashing red, g
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="154">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="239">YES</temporary>
     <children>
-      <child nodeId="node-0x167acf90" />
-      <child nodeId="node-0x16783d40" />
+      <child nodeId="node-0x15943730" />
+      <child nodeId="node-0x159606c0" />
     </children>
   </item>
-  <item nodeId="node-0x16783d40">
+  <item nodeId="node-0x159606c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="239">YES</temporary>
+    <children>
+      <child nodeId="node-0x15960710" />
+      <child nodeId="node-0x18c5a7e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c5a7e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x1595d680" />
+    </children>
+  </item>
+  <item nodeId="node-0x1595d680">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18cb4960" />
+    </children>
+  </item>
+  <item nodeId="node-0x18cb4960">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -64,186 +104,593 @@ This is a room in the ship where people go to relax. It has some comfortable sof
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="154">YES</temporary>
+    <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x16783d90" />
+      <child nodeId="node-0x1592da80" />
     </children>
   </item>
-  <item nodeId="node-0x16783d90">
-    <command xml:space="preserve">w</command>
+  <item nodeId="node-0x1592da80">
+    <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="154">YES</temporary>
+    <temporary score="199">YES</temporary>
     <children>
-      <child nodeId="node-0x167acf40" />
+      <child nodeId="node-0x18cbdb70" />
     </children>
   </item>
-  <item nodeId="node-0x167acf40">
-    <command xml:space="preserve">x window</command>
+  <item nodeId="node-0x18cbdb70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Medical Bay
+A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker that is used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken, but there still might be something in the storage locker.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c89d30" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c89d30">
+    <command xml:space="preserve">open storage locker</command>
+    <result xml:space="preserve">It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18ce5ca0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18ce5ca0">
+    <command xml:space="preserve">take scalpel</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x188a00c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x188a00c0">
+    <command xml:space="preserve">take medical tubing</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18ca4990" />
+    </children>
+  </item>
+  <item nodeId="node-0x18ca4990">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Medical Bay
+A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker that is used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken, but there still might be something in the storage locker.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18862e00" />
+    </children>
+  </item>
+  <item nodeId="node-0x18862e00">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a medical tubing
+  a scalpel
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18cb41b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18cb41b0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c99f10" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c99f10">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18847500" />
+    </children>
+  </item>
+  <item nodeId="node-0x18847500">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c7d4c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c7d4c0">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18cba490" />
+    </children>
+  </item>
+  <item nodeId="node-0x18cba490">
+    <command xml:space="preserve">take book</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="153">YES</temporary>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x132ca110" />
+    </children>
   </item>
-  <item nodeId="node-0x167acf90">
-    <command xml:space="preserve">x engine</command>
-    <result xml:space="preserve">Upon further examining the engine, you can see that the nitrogen compressor is broken.
+  <item nodeId="node-0x132ca110">
+    <command xml:space="preserve">take textbook</command>
+    <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="98">YES</temporary>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18cb7430" />
+    </children>
   </item>
-  <item nodeId="node-0x18878610">
+  <item nodeId="node-0x18cb7430">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18ca1350" />
+    </children>
+  </item>
+  <item nodeId="node-0x18ca1350">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+An astronaut who is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he needed to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x188311d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x188311d0">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x159544a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x159544a0">
+    <command xml:space="preserve">x astronaut</command>
+    <result xml:space="preserve">You see nothing special about the astronaut.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18846570" />
+    </children>
+  </item>
+  <item nodeId="node-0x18846570">
+    <command xml:space="preserve">open textboojk</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x132b4530" />
+    </children>
+  </item>
+  <item nodeId="node-0x132b4530">
+    <command xml:space="preserve">open textbook</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to search up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x15967240" />
+    </children>
+  </item>
+  <item nodeId="node-0x15967240">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18cf7150" />
+    </children>
+  </item>
+  <item nodeId="node-0x18cf7150">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x18cbb1f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18cbb1f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x159f33e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x159f33e0">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="199">YES</temporary>
+    <children>
+      <child nodeId="node-0x13a580e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13a580e0">
+    <command xml:space="preserve">open textbook</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to search up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="198">YES</temporary>
+  </item>
+  <item nodeId="node-0x15960710">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Medical Bay
+A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker that is used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken, but there still might be something in the storage locker.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="239">YES</temporary>
+    <children>
+      <child nodeId="node-0x159436e0" />
+      <child nodeId="node-0x18cb0ef0" />
+      <child nodeId="node-0x188a86b0" />
+      <child nodeId="node-0x1884ad20" />
+      <child nodeId="node-0x1881e340" />
+    </children>
+  </item>
+  <item nodeId="node-0x1881e340">
+    <command xml:space="preserve">open storage locker</command>
+    <result xml:space="preserve">It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="221">YES</temporary>
+    <children>
+      <child nodeId="node-0x18ca7b20" />
+    </children>
+  </item>
+  <item nodeId="node-0x18ca7b20">
+    <command xml:space="preserve">take scalpel and medical tubing</command>
+    <result xml:space="preserve">scalpel: Taken.
+medical tubing: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="221">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c6a9f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c6a9f0">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a medical tubing
+  a scalpel
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="221">YES</temporary>
+    <children>
+      <child nodeId="node-0x13a17570" />
+    </children>
+  </item>
+  <item nodeId="node-0x13a17570">
+    <command xml:space="preserve">x scalpel</command>
+    <result xml:space="preserve">A sharp knife that is normally used for medical procedures, but it could have other uses as well.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="221">YES</temporary>
+    <children>
+      <child nodeId="node-0x13a3b4f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13a3b4f0">
+    <command xml:space="preserve">x medical tubing</command>
+    <result xml:space="preserve">a thin and very long clear tube that is usually used in catheters, but hopefully you won&apos;t have to use it for anything like that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="220">YES</temporary>
+  </item>
+  <item nodeId="node-0x1884ad20">
+    <command xml:space="preserve">open locker</command>
+    <result xml:space="preserve">It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+  </item>
+  <item nodeId="node-0x188a86b0">
+    <command xml:space="preserve">x storage locker</command>
+    <result xml:space="preserve">A locker used for storage.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="163">YES</temporary>
+    <children>
+      <child nodeId="node-0x15956fc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x15956fc0">
+    <command xml:space="preserve">open storage locker</command>
+    <result xml:space="preserve">You open the storage locker.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="162">YES</temporary>
+  </item>
+  <item nodeId="node-0x18cb0ef0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="239">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c29660" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c29660">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Command Room
+It is a room that was used by the main security officer to watch over the ship. They are television moniters on the walls that he used to observe the rooms on the ship.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="239">YES</temporary>
+    <children>
+      <child nodeId="node-0x132ad4f0" />
+      <child nodeId="node-0x18818290" />
+    </children>
+  </item>
+  <item nodeId="node-0x18818290">
+    <command xml:space="preserve">open drawer</command>
+    <result xml:space="preserve">It doesn&apos;t look like the security officer kept much in here, but you see a roll of duct tape in the drawer.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="239">YES</temporary>
+    <children>
+      <child nodeId="node-0x18856fa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18856fa0">
+    <command xml:space="preserve">take tape</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="239">YES</temporary>
+    <children>
+      <child nodeId="node-0x188443c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x188443c0">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a duct tape
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="238">YES</temporary>
+  </item>
+  <item nodeId="node-0x132ad4f0">
+    <command xml:space="preserve">x television moniters</command>
+    <result xml:space="preserve">The moniters are showing the command room. You can see yourself as you stare at the moniters, you also notice a book you didn&apos;t notice before behind the security officer&apos;s desk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="231">YES</temporary>
+    <children>
+      <child nodeId="node-0x13a57ac0" />
+    </children>
+  </item>
+  <item nodeId="node-0x13a57ac0">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="231">YES</temporary>
+    <children>
+      <child nodeId="node-0x188a5fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x188a5fe0">
+    <command xml:space="preserve">x desk</command>
+    <result xml:space="preserve">a desk that the security officer would sit in while he observed the moniters. It has a drawer that the officer could put things in.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="231">YES</temporary>
+    <children>
+      <child nodeId="node-0x18865000" />
+    </children>
+  </item>
+  <item nodeId="node-0x18865000">
+    <command xml:space="preserve">open desk</command>
+    <result xml:space="preserve">It doesn&apos;t look like the security officer kept much in here, but you see a roll of duct tape in the drawer.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="231">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c436d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c436d0">
+    <command xml:space="preserve">open drawer</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="230">YES</temporary>
+  </item>
+  <item nodeId="node-0x159436e0">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">w
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="157">YES</temporary>
+  </item>
+  <item nodeId="node-0x15943730">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="206">YES</temporary>
+  </item>
+  <item nodeId="node-0x18c7a660">
     <command xml:space="preserve">look under bed</command>
     <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="143">YES</temporary>
+    <temporary score="213">YES</temporary>
     <children>
-      <child nodeId="node-0x18878680" />
-      <child nodeId="node-0x18878aa0" />
-      <child nodeId="node-0x188788e0" />
+      <child nodeId="node-0x18c8edb0" />
+      <child nodeId="node-0x18c8ecc0" />
     </children>
   </item>
-  <item nodeId="node-0x188788e0">
-    <command xml:space="preserve">get text</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="95">YES</temporary>
-    <children>
-      <child nodeId="node-0x18878950" />
-    </children>
-  </item>
-  <item nodeId="node-0x18878950">
-    <command xml:space="preserve">get textbook</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="95">YES</temporary>
-    <children>
-      <child nodeId="node-0x188789c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x188789c0">
-    <command xml:space="preserve">read textbook</command>
-    <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on board the space ship.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="95">YES</temporary>
-    <children>
-      <child nodeId="node-0x18878a30" />
-    </children>
-  </item>
-  <item nodeId="node-0x18878a30">
-    <command xml:space="preserve">open textbook</command>
-    <result xml:space="preserve">You flip to the part of the book that deals with how to fix a broken nitrogen compressor, and discover that it can be fixed by using the following items: Antenna, Wrench, Screwdriver, and Duct Tape.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="94">YES</temporary>
-  </item>
-  <item nodeId="node-0x18878aa0">
+  <item nodeId="node-0x18c8ecc0">
     <command xml:space="preserve">take textbook</command>
     <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="132">YES</temporary>
+    <temporary score="213">YES</temporary>
     <children>
-      <child nodeId="node-0x18878cd0" />
-      <child nodeId="node-0x18878b10" />
-      <child nodeId="node-0x18878d40" />
+      <child nodeId="node-0x188c8ad0" />
+      <child nodeId="node-0x18c8e860" />
+      <child nodeId="node-0x18c8ed40" />
+      <child nodeId="node-0x18c8f040" />
     </children>
   </item>
-  <item nodeId="node-0x18878d40">
-    <command xml:space="preserve">read textbook</command>
-    <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on board the space ship.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="127">YES</temporary>
-    <children>
-      <child nodeId="node-0x18878760" />
-    </children>
-  </item>
-  <item nodeId="node-0x18878760">
-    <command xml:space="preserve">open textbook</command>
-    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so you don&apos;t have a reason to search up something in the textbook.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="127">YES</temporary>
-    <children>
-      <child nodeId="node-0x188787d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x188787d0">
-    <command xml:space="preserve">west</command>
-    <result xml:space="preserve">
-Maintenance Room
-The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="127">YES</temporary>
-    <children>
-      <child nodeId="node-0x18878840" />
-    </children>
-  </item>
-  <item nodeId="node-0x18878840">
-    <command xml:space="preserve">open textbook</command>
-    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so you don&apos;t have a reason to search up something in the textbook.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="127">YES</temporary>
-    <children>
-      <child nodeId="node-0x18878ff0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18878ff0">
-    <command xml:space="preserve">x engine</command>
-    <result xml:space="preserve">The standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="127">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879060" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879060">
-    <command xml:space="preserve">open textbook</command>
-    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so you don&apos;t have a reason to search up something in the textbook.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="126">YES</temporary>
-  </item>
-  <item nodeId="node-0x18878b10">
+  <item nodeId="node-0x18c8f040">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -254,10 +701,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="132">YES</temporary>
     <children>
-      <child nodeId="node-0x18878b80" />
+      <child nodeId="node-0x18c8e7a0" />
     </children>
   </item>
-  <item nodeId="node-0x18878b80">
+  <item nodeId="node-0x18c8e7a0">
     <command xml:space="preserve">x engine</command>
     <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
 
@@ -266,11 +713,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="132">YES</temporary>
     <children>
-      <child nodeId="node-0x18878c60" />
-      <child nodeId="node-0x18878bf0" />
+      <child nodeId="node-0x18c8f230" />
     </children>
   </item>
-  <item nodeId="node-0x18878bf0">
+  <item nodeId="node-0x18c8f230">
     <command xml:space="preserve">open textbook</command>
     <result xml:space="preserve">look under bed
 </result>
@@ -278,19 +724,7 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="131">YES</temporary>
   </item>
-  <item nodeId="node-0x18878c60">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Maintenance Room
-A room where the engine is located and maintained.
-
-You can see a ship maintenance textbook two (closed) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="85">YES</temporary>
-  </item>
-  <item nodeId="node-0x18878cd0">
+  <item nodeId="node-0x18c8ed40">
     <command xml:space="preserve">open textbook</command>
     <result xml:space="preserve">You don&apos;t have a problem that needs solving.
 
@@ -299,7 +733,127 @@ You can see a ship maintenance textbook two (closed) here.
     <changed>YES</changed>
     <temporary score="118">YES</temporary>
   </item>
-  <item nodeId="node-0x18878680">
+  <item nodeId="node-0x18c8e860">
+    <command xml:space="preserve">read textbook</command>
+    <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on board the space ship.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="127">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c8e8b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c8e8b0">
+    <command xml:space="preserve">open textbook</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so you don&apos;t have a reason to search up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="127">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c8e900" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c8e900">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="127">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c8e950" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c8e950">
+    <command xml:space="preserve">open textbook</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so you don&apos;t have a reason to search up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="127">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c8e9c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c8e9c0">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">The standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="127">YES</temporary>
+    <children>
+      <child nodeId="node-0x18c8efd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18c8efd0">
+    <command xml:space="preserve">open textbook</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so you don&apos;t have a reason to search up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="126">YES</temporary>
+  </item>
+  <item nodeId="node-0x188c8ad0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong.
+
+You can see an Engine here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="213">YES</temporary>
+    <children>
+      <child nodeId="node-0x188d7820" />
+    </children>
+  </item>
+  <item nodeId="node-0x188d7820">
+    <command xml:space="preserve">open textbook</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to search up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="213">YES</temporary>
+    <children>
+      <child nodeId="node-0x159b52b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x159b52b0">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="213">YES</temporary>
+    <children>
+      <child nodeId="node-0x1889cd10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1889cd10">
+    <command xml:space="preserve">open textbook</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to search up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="212">YES</temporary>
+  </item>
+  <item nodeId="node-0x18c8edb0">
     <command xml:space="preserve">open textbook</command>
     <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to search up something in the textbook.
 
@@ -308,10 +862,10 @@ You can see a ship maintenance textbook two (closed) here.
     <changed>YES</changed>
     <temporary score="143">YES</temporary>
     <children>
-      <child nodeId="node-0x188786f0" />
+      <child nodeId="node-0x18c8ee20" />
     </children>
   </item>
-  <item nodeId="node-0x188786f0">
+  <item nodeId="node-0x18c8ee20">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -322,10 +876,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="143">YES</temporary>
     <children>
-      <child nodeId="node-0x18878390" />
+      <child nodeId="node-0x18c8ee90" />
     </children>
   </item>
-  <item nodeId="node-0x18878390">
+  <item nodeId="node-0x18c8ee90">
     <command xml:space="preserve">x engine</command>
     <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
 
@@ -334,10 +888,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="143">YES</temporary>
     <children>
-      <child nodeId="node-0x188783e0" />
+      <child nodeId="node-0x18c8ef00" />
     </children>
   </item>
-  <item nodeId="node-0x188783e0">
+  <item nodeId="node-0x18c8ef00">
     <command xml:space="preserve">open textbook</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -346,7 +900,7 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="142">YES</temporary>
   </item>
-  <item nodeId="node-0x167acfe0">
+  <item nodeId="node-0x18c8ef70">
     <command xml:space="preserve">x bumk</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -355,10 +909,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x167eebf0" />
+      <child nodeId="node-0x18c8f2c0" />
     </children>
   </item>
-  <item nodeId="node-0x167eebf0">
+  <item nodeId="node-0x18c8f2c0">
     <command xml:space="preserve">x bunk</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -367,10 +921,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x18878230" />
+      <child nodeId="node-0x18c8f330" />
     </children>
   </item>
-  <item nodeId="node-0x18878230">
+  <item nodeId="node-0x18c8f330">
     <command xml:space="preserve">x bed</command>
     <result xml:space="preserve">A folding bed with an old mattress on it. It&apos;s similar to a standard military bed, with a metal headboard and bed frame.
 
@@ -379,10 +933,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x18878280" />
+      <child nodeId="node-0x18c8f3a0" />
     </children>
   </item>
-  <item nodeId="node-0x18878280">
+  <item nodeId="node-0x18c8f3a0">
     <command xml:space="preserve">sleep in bed</command>
     <result xml:space="preserve">I only understood you as far as wanting to sleep.
 
@@ -391,10 +945,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x188782d0" />
+      <child nodeId="node-0x18c8f410" />
     </children>
   </item>
-  <item nodeId="node-0x188782d0">
+  <item nodeId="node-0x18c8f410">
     <command xml:space="preserve">sleep</command>
     <result xml:space="preserve">You aren&apos;t feeling especially drowsy.
 
@@ -403,10 +957,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x18878320" />
+      <child nodeId="node-0x18c8f0b0" />
     </children>
   </item>
-  <item nodeId="node-0x18878320">
+  <item nodeId="node-0x18c8f0b0">
     <command xml:space="preserve">x engine room</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -415,10 +969,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x18878450" />
+      <child nodeId="node-0x18c8f790" />
     </children>
   </item>
-  <item nodeId="node-0x18878450">
+  <item nodeId="node-0x18c8f790">
     <command xml:space="preserve">look under bed</command>
     <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
 
@@ -427,10 +981,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x167eeb90" />
+      <child nodeId="node-0x18c8f800" />
     </children>
   </item>
-  <item nodeId="node-0x167eeb90">
+  <item nodeId="node-0x18c8f800">
     <command xml:space="preserve">take book</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -439,10 +993,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x188784c0" />
+      <child nodeId="node-0x18c8f4a0" />
     </children>
   </item>
-  <item nodeId="node-0x188784c0">
+  <item nodeId="node-0x18c8f4a0">
     <command xml:space="preserve">take textbook</command>
     <result xml:space="preserve">Taken.
 
@@ -451,10 +1005,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x18878530" />
+      <child nodeId="node-0x18c8f120" />
     </children>
   </item>
-  <item nodeId="node-0x18878530">
+  <item nodeId="node-0x18c8f120">
     <command xml:space="preserve">read textbook</command>
     <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on board the space ship.
 
@@ -463,10 +1017,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
     <children>
-      <child nodeId="node-0x188785a0" />
+      <child nodeId="node-0x18c8f170" />
     </children>
   </item>
-  <item nodeId="node-0x188785a0">
+  <item nodeId="node-0x18c8f170">
     <command xml:space="preserve">open textbook</command>
     <result xml:space="preserve">You flip to the part of the book that deals with how to fix a broken nitrogen compressor, and discover that it can be fixed by using the following items: Antenna, Wrench, Screwdriver, and Duct Tape.
 
@@ -475,56 +1029,7 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
   </item>
-  <item nodeId="node-0x188790d0">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Crew&apos;s Quarters
-This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="90">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879140" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879140">
-    <command xml:space="preserve">west</command>
-    <result xml:space="preserve">
-Maintenance Room
-A room where the engine is located and maintained.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="90">YES</temporary>
-    <children>
-      <child nodeId="node-0x188791b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x188791b0">
-    <command xml:space="preserve">x engine</command>
-    <result xml:space="preserve">The engine is broken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="90">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879220" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879220">
-    <command xml:space="preserve">inv</command>
-    <result xml:space="preserve">You are carrying:
-  a ship maintenance textbook two (closed)
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="89">YES</temporary>
-  </item>
-  <item nodeId="node-0x18879290">
+  <item nodeId="node-0x18c8fa00">
     <command xml:space="preserve">x bunk</command>
     <result xml:space="preserve">Your bed
 
@@ -532,71 +1037,8 @@ A room where the engine is located and maintained.
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="103">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879300" />
-    </children>
   </item>
-  <item nodeId="node-0x18879300">
-    <command xml:space="preserve">look under bed</command>
-    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="81">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879370" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879370">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Crew&apos;s Quarters
-This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
-
-You can see a ship maintenance textbook (closed) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="81">YES</temporary>
-    <children>
-      <child nodeId="node-0x188793e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x188793e0">
-    <command xml:space="preserve">take ship maintenance textbook</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="81">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879450" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879450">
-    <command xml:space="preserve">open textbook</command>
-    <result xml:space="preserve">You open the ship maintenance textbook.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="81">YES</temporary>
-    <children>
-      <child nodeId="node-0x188794c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x188794c0">
-    <command xml:space="preserve">read textbook</command>
-    <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on the space ship.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="80">YES</temporary>
-  </item>
-  <item nodeId="node-0x188795a0">
+  <item nodeId="node-0x18c8fca0">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -607,14 +1049,12 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>NO</changed>
     <temporary score="150">YES</temporary>
     <children>
-      <child nodeId="node-0x188798b0" />
-      <child nodeId="node-0x18879760" />
-      <child nodeId="node-0x18878f00" />
-      <child nodeId="node-0x18878db0" />
-      <child nodeId="node-0x18879610" />
+      <child nodeId="node-0x18c8fe60" />
+      <child nodeId="node-0x18c8f6a0" />
+      <child nodeId="node-0x18c8fd10" />
     </children>
   </item>
-  <item nodeId="node-0x18879610">
+  <item nodeId="node-0x18c8fd10">
     <command xml:space="preserve">north</command>
     <result xml:space="preserve">
 Mess Hall
@@ -627,10 +1067,10 @@ An astronaut who is clutching his stomach. You can here it growling all the way 
     <changed>YES</changed>
     <temporary score="147">YES</temporary>
     <children>
-      <child nodeId="node-0x18879680" />
+      <child nodeId="node-0x18c8fd80" />
     </children>
   </item>
-  <item nodeId="node-0x18879680">
+  <item nodeId="node-0x18c8fd80">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -641,10 +1081,10 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="147">YES</temporary>
     <children>
-      <child nodeId="node-0x188796f0" />
+      <child nodeId="node-0x18c8fdf0" />
     </children>
   </item>
-  <item nodeId="node-0x188796f0">
+  <item nodeId="node-0x18c8fdf0">
     <command xml:space="preserve">west</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -653,45 +1093,7 @@ The room that holds the engine of the space ship. The lights are flashing red, g
     <changed>YES</changed>
     <temporary score="146">YES</temporary>
   </item>
-  <item nodeId="node-0x18878db0">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Maintenance Room
-A room where the engine is located and maintained.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="57">YES</temporary>
-    <children>
-      <child nodeId="node-0x18878e20" />
-    </children>
-  </item>
-  <item nodeId="node-0x18878e20">
-    <command xml:space="preserve">east</command>
-    <result xml:space="preserve">
-Crew&apos;s Quarters
-This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="57">YES</temporary>
-    <children>
-      <child nodeId="node-0x18878e90" />
-    </children>
-  </item>
-  <item nodeId="node-0x18878e90">
-    <command xml:space="preserve">west</command>
-    <result xml:space="preserve">
-Maintenance Room
-A room where the engine is located and maintained.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="56">YES</temporary>
-  </item>
-  <item nodeId="node-0x18878f00">
+  <item nodeId="node-0x18c8f6a0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 observation deck
@@ -702,10 +1104,10 @@ This is a room in the ship where people go to relax. It has some comfortable sof
     <changed>YES</changed>
     <temporary score="150">YES</temporary>
     <children>
-      <child nodeId="node-0x18878f70" />
+      <child nodeId="node-0x18c8f710" />
     </children>
   </item>
-  <item nodeId="node-0x18878f70">
+  <item nodeId="node-0x18c8f710">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -714,7 +1116,7 @@ This is a room in the ship where people go to relax. It has some comfortable sof
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
   </item>
-  <item nodeId="node-0x18879760">
+  <item nodeId="node-0x18c8fe60">
     <command xml:space="preserve">x engine</command>
     <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
 
@@ -723,11 +1125,11 @@ This is a room in the ship where people go to relax. It has some comfortable sof
     <changed>NO</changed>
     <temporary score="138">YES</temporary>
     <children>
-      <child nodeId="node-0x18879840" />
-      <child nodeId="node-0x188797d0" />
+      <child nodeId="node-0x18c8ff40" />
+      <child nodeId="node-0x18c8fed0" />
     </children>
   </item>
-  <item nodeId="node-0x188797d0">
+  <item nodeId="node-0x18c8fed0">
     <command xml:space="preserve">open textbook</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -736,7 +1138,7 @@ This is a room in the ship where people go to relax. It has some comfortable sof
     <changed>YES</changed>
     <temporary score="137">YES</temporary>
   </item>
-  <item nodeId="node-0x18879840">
+  <item nodeId="node-0x18c8ff40">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying nothing.
 
@@ -744,214 +1146,5 @@ This is a room in the ship where people go to relax. It has some comfortable sof
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="134">YES</temporary>
-  </item>
-  <item nodeId="node-0x188798b0">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879920" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879920">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879990" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879990">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879a00" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879a00">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879a70" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879a70">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879ae0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879ae0">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879b50" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879b50">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879bc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879bc0">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879c30" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879c30">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879ca0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879ca0">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x18879d10" />
-    </children>
-  </item>
-  <item nodeId="node-0x18879d10">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x16710510" />
-    </children>
-  </item>
-  <item nodeId="node-0x16710510">
-    <command xml:space="preserve">eastw</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x16710580" />
-    </children>
-  </item>
-  <item nodeId="node-0x16710580">
-    <command xml:space="preserve">east</command>
-    <result xml:space="preserve">
-Crew&apos;s Quarters
-This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x167105f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x167105f0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Maintenance Room
-A room where the engine is located and maintained.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x16710660" />
-    </children>
-  </item>
-  <item nodeId="node-0x16710660">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Crew&apos;s Quarters
-This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so bunks needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x167106d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x167106d0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Maintenance Room
-A room where the engine is located and maintained.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="75">YES</temporary>
-    <children>
-      <child nodeId="node-0x16710740" />
-    </children>
-  </item>
-  <item nodeId="node-0x16710740">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="74">YES</temporary>
   </item>
 </Skein>

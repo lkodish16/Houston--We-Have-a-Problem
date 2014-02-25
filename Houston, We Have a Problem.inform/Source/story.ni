@@ -29,9 +29,9 @@ Instead of looking under the bed for more than the first time:
 
 The Maintenance Room is a room. It is west of the Crew's Quarters. "The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong."
 
-The Engine is scenery in the Maintenance Room. "A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large 'United Nations Space Association' sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.". 
+The Engine is scenery in the Maintenance Room. The description is "A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large 'United Nations Space Association' sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.". 
 
-Things can be examined or unexamined. 
+Things can be examined or unexamined.  
 
 The engine is unexamined. 
 
@@ -47,13 +47,37 @@ The Astronaut is a man in the mess hall. "An astronaut who is clutching his stom
 
 
 
-The Odservation Deck is a room. It is west of the Maintenance room. "This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years."
+The Observation Deck is a room. It is west of the Maintenance room. "This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years."
+
+The window is scenery in the observation deck. "You look through the window, staring out at the thousands of stars your ship passes by. You can see the wing of the spaceship, and you see an antenna planted on the wing."
 
 
 
+The Medical Bay is a room. It is west of the Observation Deck. "A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker that is used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken, but there still might be something in the storage locker."
+
+The storage locker is scenery in the medical bay. It is a closed openable container. "A locker that the ship's medic used to hold medical supplies."
+
+After opening the storage locker:
+	say "It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind."
+	
+The scalpel is a thing. It is inside the storage locker. The description is "A sharp knife that is normally used for medical procedures, but it could have other uses as well."
+
+The medical tubing is a thing. It is inside the storage locker. The description is "a thin and very long clear tube that is usually used in catheters, but hopefully you won't have to use it for anything like that."
 
 
+The Command Room is a room. It is south of the observation deck. "It is a room that was used by the main security officer to watch over the ship. They are television moniters on the walls that he used to observe the rooms on the ship." 
 
+The television moniters are scenery in command room. The description is "The moniters are showing the command room. You can see yourself as you stare at the moniters, you also notice a book you didn't notice before behind the security officer's desk."
+
+The desk is scenery in the command room. It is a closed openable container. The description is "a desk that the security officer would sit in while he observed the moniters. It has a drawer that the officer could put things in."
+
+Understand "drawer" as desk.
+
+After opening the desk:
+	say "It doesn't look like the security officer kept much in here, but you see a roll of duct tape in the drawer."
+
+	
+The duct tape is a thing. It is inside the desk. "A roll of duct tape. Some people swear that it can fix nearly anything."
 
 
 
