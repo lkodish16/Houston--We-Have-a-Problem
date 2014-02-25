@@ -39,10 +39,38 @@ If the player examines the engine, then it is examined.
 
 The Mess Hall is a room. It is north of the Maintenance Room. "This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It's around breakfast time, so this room should be bustling with hungry crew members, but they've all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables." 
 
-Hunger is a kind of value. The hungers are hungry and not hungry. People have
-hunger. The hunger of the astronaut is hungry. 
+The Astronaut is a man in the mess hall. "The astronaut is clutching his stomach. You can here it growling all the way from where you're standing. He's wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.". 
 
-The Astronaut is a man in the mess hall. "An astronaut who is clutching his stomach. You can here it growling all the way from where you're standing. He's wearing a spacesuit, which would allow him to go outside of the ship if he needed to.". 
+
+Talking to is an action applying to one visible thing.
+Understand "talk to [someone]" or “converse with
+[someone]” as talking to. 
+
+Instead of talking to the astronaut: 
+	if the astronaut is not carrying the sandwich:
+		say "I'm so hungry! Please, just give me some food. I would do anything. I would even give you my space suitif you just brought me some food.";
+	if the astronaut is carrying the sandwich:
+		say "Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go. [line break][line break]He gives you his space suit.";
+		move space suit to the player.
+		
+Instead of giving the sandwich to the astronaut:
+	say "The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.";
+	move sandwich to the astronaut.
+		
+The space suit is a thing. "A standard UNSA spacesuit. The space suit is very large and padded with a thick and soft material. As long as you have some sort of tube to funnel oxygen from the ship to the suit, then you can go to space through the airlock."
+
+
+The Kitchen is a room. It is north of the mess hall. "The room where the head chef aboard the ship would prepare all of the meals for the crew members. It appears that most of the food and supplies have been taken by the crew members who left on the escape pods. You can see the refrigerator where the chef would keep all of his ingredients." 
+
+The refrigerator is scenery in the kitchen. It is a closed openable container. "A large white fridge for the head chef to keep food from spoiling on board the ship."
+
+Understand "fridge" as refrigerator. 
+
+The sandwich is a thing. It is inside the refrigerator. "An old tuna salad sandwich that must have been left behind by the crew."
+
+
+
+
 
 
 
@@ -65,7 +93,7 @@ The scalpel is a thing. It is inside the storage locker. The description is "A s
 The medical tubing is a thing. It is inside the storage locker. The description is "a thin and very long clear tube that is usually used in catheters, but hopefully you won't have to use it for anything like that."
 
 
-The Command Room is a room. It is south of the observation deck. "It is a room that was used by the main security officer to watch over the ship. They are television moniters on the walls that he used to observe the rooms on the ship." 
+The Command Room is a room. It is south of the observation deck. "It is a room that was used by the main security officer to watch over the ship. They are television moniters on the walls that he used to observe the rooms on the ship You can also see the desk the officer would sit in to observe the moniters." 
 
 The television moniters are scenery in command room. The description is "The moniters are showing the command room. You can see yourself as you stare at the moniters, you also notice a book you didn't notice before behind the security officer's desk."
 
@@ -75,9 +103,14 @@ Understand "drawer" as desk.
 
 After opening the desk:
 	say "It doesn't look like the security officer kept much in here, but you see a roll of duct tape in the drawer."
-
 	
 The duct tape is a thing. It is inside the desk. "A roll of duct tape. Some people swear that it can fix nearly anything."
+
+
+
+
+
+
 
 
 
