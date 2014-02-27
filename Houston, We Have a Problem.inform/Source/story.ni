@@ -1,4 +1,4 @@
- "Houston, We Have a Problem" by Leo Kodish
+"Houston, We Have a Problem" by Leo Kodish
 
 Use no scoring 
 
@@ -8,34 +8,38 @@ Crew's Quarters is a room. "This is the room you have shared with your fellow as
 
 The bed is a scenery in the Crew's Quarters. "A folding bed with an old mattress on it. It's similar to a standard military bed, with a metal headboard and bed frame."   
 
-The ship maintenance textbook is a thing. It is a closed openable container.The description is "It's a guide on how to fix any maintenance problem that may occur while on board the space ship.". 
-	
-
-Instead of opening the textbook:
-	if the engine is unexamined:
-		say "You don't have a maintenance problem that needs solving, so there's reason to search up something in the textbook.". 
-
-
-Instead of opening the textbook: 
-	if the engine is examined:
-		say "You flip to the part of the textbook dealing with how to fix a broken nitrogen compressor. You discover that it can be fixed by using the following items: Antenna, Wrench, Screwdriver, and Duct Tape.". 
-
 Instead of looking under the bed for the first time:
 	move the ship maintenance textbook to the Crew's Quarters;
 	say "You find the ship maintenance textbook you had been reading before bed." 
 	
 Instead of looking under the bed for more than the first time:
-	say "The textbook was all you kept down here. There's nothing else.".	
+	if the player is holding the ship maintenance textbook:
+		say "The textbook was all you kept down here. There's nothing else.";
+	if the ship maintenance textbook is in the crew's quarters:
+		say "You find the ship maintenance textbook you had been reading before bed.".
+		
+The ship maintenance textbook is a thing. It is a closed openable container.The description is "It's a guide on how to fix any maintenance problem that may occur while on board the space ship.".
+	
+Instead of opening the textbook:
+	if the engine is unexamined:
+		say "You don't have a maintenance problem that needs solving, so there's reason to look up something in the textbook.". 
+		
+Instead of opening the textbook: 
+	if the engine is examined:
+		say "You flip to the part of the textbook dealing with how to fix a broken nitrogen compressor. You discover that it can be fixed by using the following items: Antenna, Wrench, Screwdriver, and Duct Tape.". 
 
-The Maintenance Room is a room. It is west of the Crew's Quarters. "The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong."
 
-The Engine is scenery in the Maintenance Room. The description is "A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large 'United Nations Space Association' sticker placed on the center of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.". 
+The Maintenance Room is a room. It is west of the Crew's Quarters. "The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong." 
+
+The UNSA broadcast is a scene. The UNSA broadcast begins when the player has been in the maintenance room for one turn. When the UNSA broadcast begins, say "ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.".
+
+The Engine is scenery in the Maintenance Room. The description is "A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large 'United Nations Space Association' sticker placed in the middle of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.". 
 
 Things can be examined or unexamined.  
 
 The engine is unexamined. 
 
-If the player examines the engine, then it is examined. 
+If the player examined the engine, then the engine is examined. 
 
 The Mess Hall is a room. It is north of the Maintenance Room. "This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It's around breakfast time, so this room should be bustling with hungry crew members, but they've all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables." 
 
@@ -49,7 +53,7 @@ Understand "talk to [someone]" or “converse with
 Instead of talking to the astronaut: 
 	if the astronaut is not carrying the sandwich:
 		say "I'm so hungry! Please, just give me some food. I would do anything. I would even give you my space suitif you just brought me some food.";
-	if the astronaut is carrying the sandwich:
+	if the astronaut is carrying the sandwich: 
 		say "Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go. [line break][line break]He gives you his space suit.";
 		move space suit to the player.
 		
@@ -72,16 +76,13 @@ The sandwich is a thing. It is inside the refrigerator. "An old tuna salad sandw
 
 
 
-
-
-
 The Observation Deck is a room. It is west of the Maintenance room. "This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years."
 
 The window is scenery in the observation deck. "You look through the window, staring out at the thousands of stars your ship passes by. You can see the wing of the spaceship, and you see an antenna planted on the wing."
 
 
 
-The Medical Bay is a room. It is west of the Observation Deck. "A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker that is used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken, but there still might be something in the storage locker."
+The Medical Bay is a room. It is west of the Observation Deck. "A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken by the evacuated crew members, but there still might be something in the storage locker." 
 
 The storage locker is scenery in the medical bay. It is a closed openable container. "A locker that the ship's medic used to hold medical supplies."
 
