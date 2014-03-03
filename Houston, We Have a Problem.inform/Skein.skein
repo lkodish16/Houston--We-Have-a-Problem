@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x1b57000" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1b57000" />
+  <activeNode nodeId="node-0x10be1060" />
   <item nodeId="node-0x1b57000">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 
-The ringing of your alarm clock wakes you up. You get out of bed to find that none of your fellow crew members are in the crew&apos;s quarters. They probably just went to breakfast. You had hoped for a cushy engineering job on Earth, but the UNSA had other plans for your career. It&apos;s been two years since you were assigned to this ship, and your team hasn&apos;t been able to find any sign of alien life in the cosmos. As you are changing from your pajamas into your uniform, you hear a loud voice booming from the intercom.
+The ringing of your alarm clock wakes you up. You get out of bed to find that none of your fellow crew members are in the crew&apos;s quarters. They probably just went to breakfast. You had hoped for a cushy engineering job on Earth, but the UNSA had other plans for your career. It&apos;s been two years since you were assigned to this ship, and your team hasn&apos;t been able to find any sign of alien life in the cosmos. As you change from your pajamas into your uniform, you hear a loud voice booming from the intercom.
 
 Houston, We Have a Problem
 An Interactive Fiction by Leo Kodish
-Release 1 / Serial number 140227 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140303 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Crew&apos;s Quarters
 This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
@@ -20,10 +20,34 @@ This is the room you have shared with your fellow astronauts for the last two ye
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="79">NO</temporary>
+    <temporary score="189">NO</temporary>
     <children>
+      <child nodeId="node-0xed996f0" />
+      <child nodeId="node-0xed94a10" />
       <child nodeId="node-0xeda2b80" />
+      <child nodeId="node-0x72e6350" />
     </children>
+  </item>
+  <item nodeId="node-0x72e6350">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="83">YES</temporary>
+    <children>
+      <child nodeId="node-0xed204f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xed204f0">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="82">YES</temporary>
   </item>
   <item nodeId="node-0xeda2b80">
     <command xml:space="preserve">x</command>
@@ -189,5 +213,1115 @@ medical tubing: Taken.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="78">YES</temporary>
+  </item>
+  <item nodeId="node-0xed94a10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0xed82680" />
+    </children>
+  </item>
+  <item nodeId="node-0xed82680">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0x725e2c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x725e2c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0xed27410" />
+    </children>
+  </item>
+  <item nodeId="node-0xed27410">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+The astronaut is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0xb847230" />
+    </children>
+  </item>
+  <item nodeId="node-0xb847230">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Kitchen
+The room where the head chef aboard the ship would prepare all of the meals for the crew members. It appears that most of the food and supplies have been taken by the crew members who left on the escape pods. You can see the refrigerator where the chef would keep all of his ingredients.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0xed92ae0" />
+    </children>
+  </item>
+  <item nodeId="node-0xed92ae0">
+    <command xml:space="preserve">open fridge</command>
+    <result xml:space="preserve">You open the refrigerator, revealing a sandwich.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0x10ba3590" />
+    </children>
+  </item>
+  <item nodeId="node-0x10ba3590">
+    <command xml:space="preserve">take sandwich</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0x73e8240" />
+    </children>
+  </item>
+  <item nodeId="node-0x73e8240">
+    <command xml:space="preserve">x sandwich</command>
+    <result xml:space="preserve">An old tuna salad sandwich that must have been left behind by the crew.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0xedf2c40" />
+    </children>
+  </item>
+  <item nodeId="node-0xedf2c40">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+The astronaut is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0xedfbcf0" />
+    </children>
+  </item>
+  <item nodeId="node-0xedfbcf0">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">I&apos;m so hungry! Please, just give me some food. I would do anything. I would even give you my space suit if you just brought me some food.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b4a400" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b4a400">
+    <command xml:space="preserve">give sandwich to astronaut</command>
+    <result xml:space="preserve">The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0xed34970" />
+    </children>
+  </item>
+  <item nodeId="node-0xed34970">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: 
+
+He gives you his space suit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="137">YES</temporary>
+    <children>
+      <child nodeId="node-0x7327480" />
+    </children>
+  </item>
+  <item nodeId="node-0x7327480">
+    <command xml:space="preserve">equip space suit</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="136">YES</temporary>
+  </item>
+  <item nodeId="node-0xed996f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x10bb87c0" />
+      <child nodeId="node-0xb7053c0" />
+      <child nodeId="node-0x7217b60" />
+    </children>
+  </item>
+  <item nodeId="node-0x7217b60">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+The astronaut is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x73bdee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x73bdee0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Kitchen
+The room where the head chef aboard the ship would prepare all of the meals for the crew members. It appears that most of the food and supplies have been taken by the crew members who left on the escape pods. You can see the refrigerator where the chef would keep all of his ingredients.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xed92880" />
+      <child nodeId="node-0xb653880" />
+    </children>
+  </item>
+  <item nodeId="node-0xb653880">
+    <command xml:space="preserve">open fridge</command>
+    <result xml:space="preserve">You open the refrigerator, revealing a sandwich.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xed2f710" />
+    </children>
+  </item>
+  <item nodeId="node-0xed2f710">
+    <command xml:space="preserve">take sandwich</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x739ba50" />
+      <child nodeId="node-0x1879290" />
+    </children>
+  </item>
+  <item nodeId="node-0x1879290">
+    <command xml:space="preserve">x sandwich</command>
+    <result xml:space="preserve">An old tuna salad sandwich that must have been left behind by the crew.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="124">YES</temporary>
+    <children>
+      <child nodeId="node-0x10b87e90" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b87e90">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+The astronaut is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="124">YES</temporary>
+    <children>
+      <child nodeId="node-0x72ac1d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x72ac1d0">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">I&apos;m so hungry! Please, just give me some food. I would do anything. I would even give you my space suitif you just brought me some food.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="124">YES</temporary>
+    <children>
+      <child nodeId="node-0xedb8dc0" />
+    </children>
+  </item>
+  <item nodeId="node-0xedb8dc0">
+    <command xml:space="preserve">give sandwich to astronaut</command>
+    <result xml:space="preserve">The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="124">YES</temporary>
+    <children>
+      <child nodeId="node-0xed06eb0" />
+    </children>
+  </item>
+  <item nodeId="node-0xed06eb0">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">w
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="123">YES</temporary>
+  </item>
+  <item nodeId="node-0x739ba50">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+The astronaut is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xedd5670" />
+    </children>
+  </item>
+  <item nodeId="node-0xedd5670">
+    <command xml:space="preserve">give sandwich to astronaut</command>
+    <result xml:space="preserve">The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xed900d0" />
+      <child nodeId="node-0xedddc00" />
+    </children>
+  </item>
+  <item nodeId="node-0xedddc00">
+    <command xml:space="preserve">take space suit</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0xb70d780" />
+    </children>
+  </item>
+  <item nodeId="node-0xb70d780">
+    <command xml:space="preserve">open astronaut</command>
+    <result xml:space="preserve">He&apos;s not something you can open.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0xedb5730" />
+    </children>
+  </item>
+  <item nodeId="node-0xedb5730">
+    <command xml:space="preserve">talk to astronaut again</command>
+    <result xml:space="preserve">I only understood you as far as wanting to talk to the Astronaut.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0x10bf91f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x10bf91f0">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: 
+
+He gives you his space suit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0x738aaf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x738aaf0">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a space suit
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0x739ccc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x739ccc0">
+    <command xml:space="preserve">wear space suit</command>
+    <result xml:space="preserve">You put on the space suit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0xeda6aa0" />
+    </children>
+  </item>
+  <item nodeId="node-0xeda6aa0">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a space suit (being worn)
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0xeda1660" />
+    </children>
+  </item>
+  <item nodeId="node-0xeda1660">
+    <command xml:space="preserve">x player</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="153">YES</temporary>
+    <children>
+      <child nodeId="node-0x10b755d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b755d0">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">As good-looking as ever.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="152">YES</temporary>
+  </item>
+  <item nodeId="node-0xed900d0">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: 
+
+He gives you his space suit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xed317f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xed317f0">
+    <command xml:space="preserve">take space suit</command>
+    <result xml:space="preserve">You already have that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xf1ae5a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xf1ae5a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x72dc900" />
+    </children>
+  </item>
+  <item nodeId="node-0x72dc900">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x10b963f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b963f0">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xeddcfe0" />
+    </children>
+  </item>
+  <item nodeId="node-0xeddcfe0">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x10b2bd90" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b2bd90">
+    <command xml:space="preserve">combine textbook with space suit</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x10bfb980" />
+    </children>
+  </item>
+  <item nodeId="node-0x10bfb980">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a ship maintenance textbook (closed)
+  a space suit
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xed4cb80" />
+    </children>
+  </item>
+  <item nodeId="node-0xed4cb80">
+    <command xml:space="preserve">open bok</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x10b2da30" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b2da30">
+    <command xml:space="preserve">open book</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to look up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xf1d37b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xf1d37b0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0xf1ab4d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xf1ab4d0">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed in the middle of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="189">YES</temporary>
+    <children>
+      <child nodeId="node-0x10be1060" />
+    </children>
+  </item>
+  <item nodeId="node-0x10be1060">
+    <command xml:space="preserve">open book</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to look up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="188">YES</temporary>
+  </item>
+  <item nodeId="node-0xed92880">
+    <command xml:space="preserve">open kitchen</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xb860e60" />
+    </children>
+  </item>
+  <item nodeId="node-0xb860e60">
+    <command xml:space="preserve">open fridge</command>
+    <result xml:space="preserve">You open the refrigerator, revealing a sandwich.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xb7056f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb7056f0">
+    <command xml:space="preserve">take sandwich</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xb839d90" />
+    </children>
+  </item>
+  <item nodeId="node-0xb839d90">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+The astronaut is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xedd9400" />
+    </children>
+  </item>
+  <item nodeId="node-0xedd9400">
+    <command xml:space="preserve">give sandwich to astronaut</command>
+    <result xml:space="preserve">The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x732b050" />
+    </children>
+  </item>
+  <item nodeId="node-0x732b050">
+    <command xml:space="preserve">talk to astronaut</command>
+    <result xml:space="preserve">Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: 
+
+He gives you his space suit.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x10b61540" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b61540">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xed0bcb0" />
+    </children>
+  </item>
+  <item nodeId="node-0xed0bcb0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xed32270" />
+    </children>
+  </item>
+  <item nodeId="node-0xed32270">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0x72dac60" />
+    </children>
+  </item>
+  <item nodeId="node-0x72dac60">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Medical Bay
+A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken by the evacuated crew members, but there still might be something in the storage locker.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xb84cf30" />
+    </children>
+  </item>
+  <item nodeId="node-0xb84cf30">
+    <command xml:space="preserve">open locker</command>
+    <result xml:space="preserve">It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xb8605d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb8605d0">
+    <command xml:space="preserve">take tubing</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="169">YES</temporary>
+    <children>
+      <child nodeId="node-0xeda8960" />
+    </children>
+  </item>
+  <item nodeId="node-0xeda8960">
+    <command xml:space="preserve">combine space suit with tubing</command>
+    <result xml:space="preserve">w
+</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="168">YES</temporary>
+  </item>
+  <item nodeId="node-0xb7053c0">
+    <command xml:space="preserve">x engine</command>
+    <result xml:space="preserve">A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large &quot;United Nations Space Association&quot; sticker placed in the middle of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="101">YES</temporary>
+    <children>
+      <child nodeId="node-0xed62b30" />
+    </children>
+  </item>
+  <item nodeId="node-0xed62b30">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="101">YES</temporary>
+    <children>
+      <child nodeId="node-0xb861460" />
+    </children>
+  </item>
+  <item nodeId="node-0xb861460">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the ship maintenance textbook you had been reading before bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="101">YES</temporary>
+    <children>
+      <child nodeId="node-0xed25340" />
+    </children>
+  </item>
+  <item nodeId="node-0xed25340">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="101">YES</temporary>
+    <children>
+      <child nodeId="node-0xb8613e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb8613e0">
+    <command xml:space="preserve">x book</command>
+    <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on board the space ship.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="101">YES</temporary>
+    <children>
+      <child nodeId="node-0xedeb650" />
+    </children>
+  </item>
+  <item nodeId="node-0xedeb650">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">It&apos;s a guide on how to fix any maintenance problem that may occur while on board the space ship.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="101">YES</temporary>
+    <children>
+      <child nodeId="node-0x739b9d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x739b9d0">
+    <command xml:space="preserve">open book</command>
+    <result xml:space="preserve">You don&apos;t have a maintenance problem that needs solving, so there&apos;s reason to look up something in the textbook.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="100">YES</temporary>
+  </item>
+  <item nodeId="node-0x10bb87c0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0xb6e8310" />
+      <child nodeId="node-0x10b89930" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b89930">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Medical Bay
+A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken by the evacuated crew members, but there still might be something in the storage locker.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0xed5a0c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xed5a0c0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0xed12860" />
+    </children>
+  </item>
+  <item nodeId="node-0xed12860">
+    <command xml:space="preserve">norht</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bdd9a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bdd9a0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0xedd6090" />
+    </children>
+  </item>
+  <item nodeId="node-0xedd6090">
+    <command xml:space="preserve">north</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables.
+
+The astronaut is clutching his stomach. You can here it growling all the way from where you&apos;re standing. He&apos;s wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0x733de90" />
+    </children>
+  </item>
+  <item nodeId="node-0x733de90">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Kitchen
+The room where the head chef aboard the ship would prepare all of the meals for the crew members. It appears that most of the food and supplies have been taken by the crew members who left on the escape pods. You can see the refrigerator where the chef would keep all of his ingredients.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b10e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b10e30">
+    <command xml:space="preserve">open fridger</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0x73efda0" />
+    </children>
+  </item>
+  <item nodeId="node-0x73efda0">
+    <command xml:space="preserve">open fridge</command>
+    <result xml:space="preserve">You open the refrigerator, revealing a sandwich.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0xb85ee20" />
+    </children>
+  </item>
+  <item nodeId="node-0xb85ee20">
+    <command xml:space="preserve">take sandwich</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0xed87990" />
+    </children>
+  </item>
+  <item nodeId="node-0xed87990">
+    <command xml:space="preserve">x sandwich</command>
+    <result xml:space="preserve">You see nothing special about the sandwich.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="114">YES</temporary>
+    <children>
+      <child nodeId="node-0xed58a10" />
+    </children>
+  </item>
+  <item nodeId="node-0xed58a10">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="113">YES</temporary>
+  </item>
+  <item nodeId="node-0xb6e8310">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7263780" />
+    </children>
+  </item>
+  <item nodeId="node-0x7263780">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your reading material under your bed. The engine room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x10b810d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x10b810d0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x10bba880" />
+    </children>
+  </item>
+  <item nodeId="node-0x10bba880">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0xeda07f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xeda07f0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Medical Bay
+A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken by the evacuated crew members, but there still might be something in the storage locker.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x7347170" />
+    </children>
+  </item>
+  <item nodeId="node-0x7347170">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x73815d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x73815d0">
+    <command xml:space="preserve">x glass</command>
+    <result xml:space="preserve">You look through the window, staring out at the thousands of stars your ship passes by. You can see the wing of the spaceship, and you see an antenna planted on the wing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="93">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bf8630" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bf8630">
+    <command xml:space="preserve">x window</command>
+    <result xml:space="preserve">You look through the window, staring out at the thousands of stars your ship passes by. You can see the wing of the spaceship, and you see an antenna planted on the wing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="92">YES</temporary>
   </item>
 </Skein>

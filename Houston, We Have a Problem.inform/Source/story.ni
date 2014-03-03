@@ -1,8 +1,8 @@
-"Houston, We Have a Problem" by Leo Kodish
+"Houston, We Have a Problem" by Leo Kodish 
 
 Use no scoring 
 
-When play begins: say "The ringing of your alarm clock wakes you up. You get out of bed to find that none of your fellow crew members are in the crew's quarters. They probably just went to breakfast. You had hoped for a cushy engineering job on Earth, but the UNSA had other plans for your career. It's been two years since you were assigned to this ship, and your team hasn't been able to find any sign of alien life in the cosmos. As you are changing from your pajamas into your uniform, you hear a loud voice booming from the intercom."
+When play begins: say "The ringing of your alarm clock wakes you up. You get out of bed to find that none of your fellow crew members are in the crew's quarters. They probably just went to breakfast. You had hoped for a cushy engineering job on Earth, but the UNSA had other plans for your career. It's been two years since you were assigned to this ship, and your team hasn't been able to find any sign of alien life in the cosmos. As you change from your pajamas into your uniform, you hear a loud voice booming from the intercom."
 
 Crew's Quarters is a room. "This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don't have a bedside desk or anything like that, so you've had to keep your reading material under your bed. The engine room is to your west." 
 
@@ -19,6 +19,8 @@ Instead of looking under the bed for more than the first time:
 		say "You find the ship maintenance textbook you had been reading before bed.".
 		
 The ship maintenance textbook is a thing. It is a closed openable container.The description is "It's a guide on how to fix any maintenance problem that may occur while on board the space ship.".
+
+Understand "book" as textbook.
 	
 Instead of opening the textbook:
 	if the engine is unexamined:
@@ -29,7 +31,7 @@ Instead of opening the textbook:
 		say "You flip to the part of the textbook dealing with how to fix a broken nitrogen compressor. You discover that it can be fixed by using the following items: Antenna, Wrench, Screwdriver, and Duct Tape.". 
 
 
-The Maintenance Room is a room. It is west of the Crew's Quarters. "The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have wrong." 
+The Maintenance Room is a room. It is west of the Crew's Quarters. "The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong." 
 
 The UNSA broadcast is a scene. The UNSA broadcast begins when the player has been in the maintenance room for one turn. When the UNSA broadcast begins, say "ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.".
 
@@ -48,20 +50,20 @@ The Astronaut is a man in the mess hall. "The astronaut is clutching his stomach
 
 Talking to is an action applying to one visible thing.
 Understand "talk to [someone]" or “converse with
-[someone]” as talking to. 
+[someone]” as talking to.  
 
 Instead of talking to the astronaut: 
 	if the astronaut is not carrying the sandwich:
-		say "I'm so hungry! Please, just give me some food. I would do anything. I would even give you my space suitif you just brought me some food.";
+		say "I'm so hungry! Please, just give me some food. I would do anything. I would even give you my space suit if you just brought me some food.";
 	if the astronaut is carrying the sandwich: 
-		say "Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go. [line break][line break]He gives you his space suit.";
+		say "Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: [line break][line break]He gives you his space suit.";
 		move space suit to the player.
 		
 Instead of giving the sandwich to the astronaut:
 	say "The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.";
 	move sandwich to the astronaut.
 		
-The space suit is a thing. "A standard UNSA spacesuit. The space suit is very large and padded with a thick and soft material. As long as you have some sort of tube to funnel oxygen from the ship to the suit, then you can go to space through the airlock."
+The space suit is a thing. It is wearable. "A standard UNSA spacesuit. The space suit is very large and padded with a thick and soft material. As long as you have some sort of tube to funnel oxygen from the ship to the suit, then you can go to space through the airlock."
 
 
 The Kitchen is a room. It is north of the mess hall. "The room where the head chef aboard the ship would prepare all of the meals for the crew members. It appears that most of the food and supplies have been taken by the crew members who left on the escape pods. You can see the refrigerator where the chef would keep all of his ingredients." 
@@ -70,7 +72,7 @@ The refrigerator is scenery in the kitchen. It is a closed openable container. "
 
 Understand "fridge" as refrigerator. 
 
-The sandwich is a thing. It is inside the refrigerator. "An old tuna salad sandwich that must have been left behind by the crew."
+The sandwich is a thing. It is inside the refrigerator. The description is "An old tuna salad sandwich that must have been left behind by the crew." 
 
 
 
@@ -80,6 +82,7 @@ The Observation Deck is a room. It is west of the Maintenance room. "This is a r
 
 The window is scenery in the observation deck. "You look through the window, staring out at the thousands of stars your ship passes by. You can see the wing of the spaceship, and you see an antenna planted on the wing."
 
+Understand "glass" as window. 
 
 
 The Medical Bay is a room. It is west of the Observation Deck. "A room that is used to treat any injuries that the astronauts may have on the ship. You see a storage locker used to hold chemicals and medical equipment. Most of the equipment in the room appears to have been taken by the evacuated crew members, but there still might be something in the storage locker." 
@@ -108,12 +111,26 @@ After opening the desk:
 The duct tape is a thing. It is inside the desk. "A roll of duct tape. Some people swear that it can fix nearly anything."
 
 
+The Airlock is a room. It is north of the Observation Deck. "The airlock".
+
+The oxygen tank is scenery in the airlock. "A large tank filled with oxygen that you hook up to your spacesuit using a tube to transfer air into your suit while out in space."
 
 
 
 
 
+Understand "combine [something] with [something]" as combining it with. Combining it with is an action applying to two carried things. Understand the command "connect" as "combine".
 
+Understand the command "attach" as something new. Understand "attach [something] to [something]" as combining it with.
+
+After combining space suit with medical tubing:
+	say "You plug the medical tubing into the oxygen hole on your space suit. The suit is now enhanced, capable of allowing air to flow through it, provided that it is hooked up to an oxygen tank.";
+	move space suit to the astronaut;
+	move medical tubing to the astronaut;
+	move oxygen enhanced space suit to the player. 
+	
+
+An oxygen enhanced space suit is a thing. "It is a space suit that is now capable of allowing air to flow through it, as long as its tube is attached to an oxygen tank.". 
 
 
 
