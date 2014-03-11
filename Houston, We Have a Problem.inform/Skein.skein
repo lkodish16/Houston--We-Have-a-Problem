@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x6fc9da0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x166c8130" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x2035bee0" />
-  <item nodeId="node-0x6fc9da0">
+  <activeNode nodeId="node-0x20dd3d20" />
+  <item nodeId="node-0x166c8130">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,7 +12,7 @@ The ringing of your alarm clock wakes you up. You get out of bed to find that no
 
 Houston, We Have a Problem
 An Interactive Fiction by Leo Kodish
-Release 1 / Serial number 140310 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 140311 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Crew&apos;s Quarters
 This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your things under your bed. 
@@ -20,14 +20,146 @@ The Maintenance Room is to your west.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1243">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="1264">NO</temporary>
     <children>
-      <child nodeId="node-0x17d73170" />
-      <child nodeId="node-0x6fc9df0" />
+      <child nodeId="node-0x166c8050" />
+      <child nodeId="node-0x14591e80" />
     </children>
   </item>
-  <item nodeId="node-0x6fc9df0">
+  <item nodeId="node-0x14591e80">
+    <command xml:space="preserve">look under bed</command>
+    <result xml:space="preserve">You find the Auto-Mechanic you keep under your bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1031">YES</temporary>
+    <children>
+      <child nodeId="node-0x16637f20" />
+      <child nodeId="node-0x14591ed0" />
+    </children>
+  </item>
+  <item nodeId="node-0x14591ed0">
+    <command xml:space="preserve">take mech</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="978">YES</temporary>
+    <children>
+      <child nodeId="node-0x14591f40" />
+    </children>
+  </item>
+  <item nodeId="node-0x14591f40">
+    <command xml:space="preserve">take auto</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="978">YES</temporary>
+    <children>
+      <child nodeId="node-0x145f9d50" />
+    </children>
+  </item>
+  <item nodeId="node-0x145f9d50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
+The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
+
+ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="978">YES</temporary>
+    <children>
+      <child nodeId="node-0x145f9da0" />
+    </children>
+  </item>
+  <item nodeId="node-0x145f9da0">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="977">YES</temporary>
+  </item>
+  <item nodeId="node-0x16637f20">
+    <command xml:space="preserve">take auto</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1031">YES</temporary>
+    <children>
+      <child nodeId="node-0x1668b430" />
+      <child nodeId="node-0x16661610" />
+      <child nodeId="node-0x1667fcd0" />
+      <child nodeId="node-0x16637f90" />
+    </children>
+  </item>
+  <item nodeId="node-0x16637f90">
+    <command xml:space="preserve">take auto mechanic</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="934">YES</temporary>
+  </item>
+  <item nodeId="node-0x1667fcd0">
+    <command xml:space="preserve">x auto mechanic</command>
+    <result xml:space="preserve">A device that when switched on, can be used to diagnose any problem that may occur with any type of engine, provided you are in the prescence of an engine.
+
+The Auto-Mechanic is currently switched off.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1031">YES</temporary>
+    <children>
+      <child nodeId="node-0x1667fd20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1667fd20">
+    <command xml:space="preserve">fix auto</command>
+    <result xml:space="preserve">That doesn&apos;t need to be fixed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1031">YES</temporary>
+    <children>
+      <child nodeId="node-0x1667fd90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1667fd90">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve">You are dressed in your UNSA engineers uniform. You have grown quite a long beard after being on this ship for two years without a razor or shaving cream.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1031">YES</temporary>
+    <children>
+      <child nodeId="node-0x166615c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x166615c0">
+    <command xml:space="preserve">x player</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1030">YES</temporary>
+  </item>
+  <item nodeId="node-0x16661610">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -39,15 +171,88 @@ ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1243">YES</temporary>
+    <temporary score="1017">YES</temporary>
     <children>
-      <child nodeId="node-0x1950e7f0" />
-      <child nodeId="node-0x195a6770" />
-      <child nodeId="node-0x166754f0" />
-      <child nodeId="node-0x1007b690" />
+      <child nodeId="node-0x16661680" />
     </children>
   </item>
-  <item nodeId="node-0x1007b690">
+  <item nodeId="node-0x16661680">
+    <command xml:space="preserve">fix engine</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1016">YES</temporary>
+    <children>
+      <child nodeId="node-0x1668b3e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1668b3e0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Crew&apos;s Quarters
+This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your things under your bed. 
+The Maintenance Room is to your west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1000">YES</temporary>
+  </item>
+  <item nodeId="node-0x1668b430">
+    <command xml:space="preserve">drop</command>
+    <result xml:space="preserve">(the Auto-Mechanic)
+Dropped.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="940">YES</temporary>
+    <children>
+      <child nodeId="node-0x1668b4a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1668b4a0">
+    <command xml:space="preserve">take auto mech</command>
+    <result xml:space="preserve">I only understood you as far as wanting to take the Auto-Mechanic.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="940">YES</temporary>
+    <children>
+      <child nodeId="node-0x1664bc70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1664bc70">
+    <command xml:space="preserve">take auto mechanic</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="939">YES</temporary>
+  </item>
+  <item nodeId="node-0x166c8050">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
+The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
+
+ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1264">YES</temporary>
+    <children>
+      <child nodeId="node-0x166548a0" />
+      <child nodeId="node-0x1662e690" />
+      <child nodeId="node-0x1662e5d0" />
+      <child nodeId="node-0x1667ecf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1667ecf0">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">You don&apos;t have the necessary tools to fix that right now.
 
@@ -58,11 +263,11 @@ You don&apos;t have the necessary tools to fix that right now.
     <changed>YES</changed>
     <temporary score="1025">YES</temporary>
     <children>
-      <child nodeId="node-0x100c01c0" />
-      <child nodeId="node-0x17d5e120" />
+      <child nodeId="node-0x16669ea0" />
+      <child nodeId="node-0x1667ed40" />
     </children>
   </item>
-  <item nodeId="node-0x17d5e120">
+  <item nodeId="node-0x1667ed40">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Crew&apos;s Quarters
@@ -74,10 +279,10 @@ The Maintenance Room is to your west.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x195a49a0" />
+      <child nodeId="node-0x16696790" />
     </children>
   </item>
-  <item nodeId="node-0x195a49a0">
+  <item nodeId="node-0x16696790">
     <command xml:space="preserve">take auto</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -86,10 +291,10 @@ The Maintenance Room is to your west.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x195e4f40" />
+      <child nodeId="node-0x166967e0" />
     </children>
   </item>
-  <item nodeId="node-0x195e4f40">
+  <item nodeId="node-0x166967e0">
     <command xml:space="preserve">look under bed</command>
     <result xml:space="preserve">You find the Auto-Mechanic you keep under your bed.
 
@@ -98,10 +303,10 @@ The Maintenance Room is to your west.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x1958b8b0" />
+      <child nodeId="node-0x16696830" />
     </children>
   </item>
-  <item nodeId="node-0x1958b8b0">
+  <item nodeId="node-0x16696830">
     <command xml:space="preserve">take auto mechanic</command>
     <result xml:space="preserve">Taken.
 
@@ -110,10 +315,10 @@ The Maintenance Room is to your west.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x1661d620" />
+      <child nodeId="node-0x1667f750" />
     </children>
   </item>
-  <item nodeId="node-0x1661d620">
+  <item nodeId="node-0x1667f750">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -125,10 +330,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x17da6ec0" />
+      <child nodeId="node-0x1667f7a0" />
     </children>
   </item>
-  <item nodeId="node-0x17da6ec0">
+  <item nodeId="node-0x1667f7a0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -140,10 +345,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x17dbc0d0" />
+      <child nodeId="node-0x1667f7f0" />
     </children>
   </item>
-  <item nodeId="node-0x17dbc0d0">
+  <item nodeId="node-0x1667f7f0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Medical Bay
@@ -155,10 +360,10 @@ The Observation Deck is to the East.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x100a51e0" />
+      <child nodeId="node-0x145165e0" />
     </children>
   </item>
-  <item nodeId="node-0x100a51e0">
+  <item nodeId="node-0x145165e0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Observation Deck
@@ -170,10 +375,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0xe5bf930" />
+      <child nodeId="node-0x14516650" />
     </children>
   </item>
-  <item nodeId="node-0xe5bf930">
+  <item nodeId="node-0x14516650">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Command Room
@@ -185,10 +390,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x10042770" />
+      <child nodeId="node-0x166a9670" />
     </children>
   </item>
-  <item nodeId="node-0x10042770">
+  <item nodeId="node-0x166a9670">
     <command xml:space="preserve">open drawer</command>
     <result xml:space="preserve">It doesn&apos;t look like the security officer kept much in here, but you do see a wrench in the drawer.
 
@@ -197,10 +402,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x17d64c60" />
+      <child nodeId="node-0x166a96c0" />
     </children>
   </item>
-  <item nodeId="node-0x17d64c60">
+  <item nodeId="node-0x166a96c0">
     <command xml:space="preserve">take wrench</command>
     <result xml:space="preserve">Taken.
 
@@ -209,10 +414,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x195bab20" />
+      <child nodeId="node-0x166a9710" />
     </children>
   </item>
-  <item nodeId="node-0x195bab20">
+  <item nodeId="node-0x166a9710">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Observation Deck
@@ -224,10 +429,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x6fa37f0" />
+      <child nodeId="node-0x16669de0" />
     </children>
   </item>
-  <item nodeId="node-0x6fa37f0">
+  <item nodeId="node-0x16669de0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -239,10 +444,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="996">YES</temporary>
     <children>
-      <child nodeId="node-0x18d5b90" />
+      <child nodeId="node-0x16669e30" />
     </children>
   </item>
-  <item nodeId="node-0x18d5b90">
+  <item nodeId="node-0x16669e30">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">Using the wrench and antenna, you repair the broken nitrogen compressor. The lights in the room have stopped flashing red, and you hear a voice come over the intercom. 
 ATTENTION! This is another UNSA broadcast. We have received a signal from your ship that your engine has been repaired and is no longer in any danger of exploding. Our rescue ships should now have enough time to reach you.
@@ -260,7 +465,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="995">YES</temporary>
   </item>
-  <item nodeId="node-0x100c01c0">
+  <item nodeId="node-0x16669ea0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -272,12 +477,12 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>NO</changed>
     <temporary score="1025">YES</temporary>
     <children>
-      <child nodeId="node-0xe5939e0" />
-      <child nodeId="node-0x103c2040" />
-      <child nodeId="node-0x195874b0" />
+      <child nodeId="node-0x14533420" />
+      <child nodeId="node-0x166a9610" />
+      <child nodeId="node-0x1665fa70" />
     </children>
   </item>
-  <item nodeId="node-0x195874b0">
+  <item nodeId="node-0x1665fa70">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -286,10 +491,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1025">YES</temporary>
     <children>
-      <child nodeId="node-0x19587520" />
+      <child nodeId="node-0x1665fac0" />
     </children>
   </item>
-  <item nodeId="node-0x19587520">
+  <item nodeId="node-0x1665fac0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -301,10 +506,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="1025">YES</temporary>
     <children>
-      <child nodeId="node-0x18ad540" />
+      <child nodeId="node-0x145166c0" />
     </children>
   </item>
-  <item nodeId="node-0x18ad540">
+  <item nodeId="node-0x145166c0">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">You don&apos;t have the necessary tools to fix that right now.
 
@@ -315,7 +520,7 @@ You don&apos;t have the necessary tools to fix that right now.
     <changed>YES</changed>
     <temporary score="1024">YES</temporary>
   </item>
-  <item nodeId="node-0x103c2040">
+  <item nodeId="node-0x166a9610">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Command Room
@@ -327,10 +532,10 @@ The Observation Deck is to the North.
     <changed>NO</changed>
     <temporary score="973">YES</temporary>
     <children>
-      <child nodeId="node-0x14563590" />
+      <child nodeId="node-0x1665fb50" />
     </children>
   </item>
-  <item nodeId="node-0x14563590">
+  <item nodeId="node-0x1665fb50">
     <command xml:space="preserve">open drawer</command>
     <result xml:space="preserve">It doesn&apos;t look like the security officer kept much in here, but you do see a wrench in the drawer.
 
@@ -339,10 +544,10 @@ The Observation Deck is to the North.
     <changed>NO</changed>
     <temporary score="973">YES</temporary>
     <children>
-      <child nodeId="node-0x1003cb10" />
+      <child nodeId="node-0x1664e020" />
     </children>
   </item>
-  <item nodeId="node-0x1003cb10">
+  <item nodeId="node-0x1664e020">
     <command xml:space="preserve">take wrench</command>
     <result xml:space="preserve">Taken.
 
@@ -351,20 +556,20 @@ The Observation Deck is to the North.
     <changed>NO</changed>
     <temporary score="973">YES</temporary>
     <children>
-      <child nodeId="node-0x17d775d0" />
+      <child nodeId="node-0x166b2e00" />
     </children>
   </item>
-  <item nodeId="node-0x17d775d0">
+  <item nodeId="node-0x166b2e00">
     <command xml:space="preserve">fix wrench</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="973">YES</temporary>
     <children>
-      <child nodeId="node-0x17d668e0" />
+      <child nodeId="node-0x166b2e50" />
     </children>
   </item>
-  <item nodeId="node-0x17d668e0">
+  <item nodeId="node-0x166b2e50">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Observation Deck
@@ -376,10 +581,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>NO</changed>
     <temporary score="973">YES</temporary>
     <children>
-      <child nodeId="node-0x100ac120" />
+      <child nodeId="node-0x1664d9d0" />
     </children>
   </item>
-  <item nodeId="node-0x100ac120">
+  <item nodeId="node-0x1664d9d0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -391,10 +596,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>NO</changed>
     <temporary score="973">YES</temporary>
     <children>
-      <child nodeId="node-0x195a7db0" />
+      <child nodeId="node-0x1664da40" />
     </children>
   </item>
-  <item nodeId="node-0x195a7db0">
+  <item nodeId="node-0x1664da40">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">Using the wrench and antenna, you repair the broken nitrogen compressor. The lights in the room have stopped flashing red, and you hear a voice come over the intercom. 
 ATTENTION! This is another UNSA broadcast. We have received a signal from your ship that your engine has been repaired and is no longer in any danger of exploding. Our rescue ships should now have enough time to reach you.
@@ -412,10 +617,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="973">YES</temporary>
     <children>
-      <child nodeId="node-0x1880f80" />
+      <child nodeId="node-0x1664dab0" />
     </children>
   </item>
-  <item nodeId="node-0x1880f80">
+  <item nodeId="node-0x1664dab0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Please give one of the answers above.
 
@@ -425,7 +630,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="972">YES</temporary>
   </item>
-  <item nodeId="node-0xe5939e0">
+  <item nodeId="node-0x14533420">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Medical Bay
@@ -437,10 +642,10 @@ The Observation Deck is to the East.
     <changed>NO</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x100879d0" />
+      <child nodeId="node-0x14533490" />
     </children>
   </item>
-  <item nodeId="node-0x100879d0">
+  <item nodeId="node-0x14533490">
     <command xml:space="preserve">open locker</command>
     <result xml:space="preserve">It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind.
 
@@ -449,10 +654,10 @@ The Observation Deck is to the East.
     <changed>YES</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x100552a0" />
+      <child nodeId="node-0x14533500" />
     </children>
   </item>
-  <item nodeId="node-0x100552a0">
+  <item nodeId="node-0x14533500">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Observation Deck
@@ -464,10 +669,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x17dbf690" />
+      <child nodeId="node-0x1663f690" />
     </children>
   </item>
-  <item nodeId="node-0x17dbf690">
+  <item nodeId="node-0x1663f690">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Command Room
@@ -479,10 +684,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x17de0d10" />
+      <child nodeId="node-0x166b2d50" />
     </children>
   </item>
-  <item nodeId="node-0x17de0d10">
+  <item nodeId="node-0x166b2d50">
     <command xml:space="preserve">open drawer</command>
     <result xml:space="preserve">It doesn&apos;t look like the security officer kept much in here, but you do see a wrench in the drawer.
 
@@ -491,10 +696,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x19754550" />
+      <child nodeId="node-0x166b2da0" />
     </children>
   </item>
-  <item nodeId="node-0x19754550">
+  <item nodeId="node-0x166b2da0">
     <command xml:space="preserve">take wrench</command>
     <result xml:space="preserve">Taken.
 
@@ -503,10 +708,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x17da95e0" />
+      <child nodeId="node-0x1664df70" />
     </children>
   </item>
-  <item nodeId="node-0x17da95e0">
+  <item nodeId="node-0x1664df70">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Observation Deck
@@ -518,10 +723,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x1972bb90" />
+      <child nodeId="node-0x1663f700" />
     </children>
   </item>
-  <item nodeId="node-0x1972bb90">
+  <item nodeId="node-0x1663f700">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -533,17 +738,133 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="952">YES</temporary>
     <children>
-      <child nodeId="node-0x19777050" />
+      <child nodeId="node-0x1663f750" />
     </children>
   </item>
-  <item nodeId="node-0x19777050">
+  <item nodeId="node-0x1663f750">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="951">YES</temporary>
   </item>
-  <item nodeId="node-0x166754f0">
+  <item nodeId="node-0x1662e5d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables. 
+The Kitchen is to the North
+
+You can see a kitchen door and an Astronaut here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x20d368a0" />
+      <child nodeId="node-0x1662e620" />
+    </children>
+  </item>
+  <item nodeId="node-0x1662e620">
+    <command xml:space="preserve">give sandwich</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1033">YES</temporary>
+  </item>
+  <item nodeId="node-0x20d368a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
+The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x203304a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x203304a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years. 
+The Medical Bay is to the West. The Airlock is to the North. The Command Room is to the South, and the Maintenance Room is to the East.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x14524370" />
+    </children>
+  </item>
+  <item nodeId="node-0x14524370">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Medical Bay
+A room that is used to treat any injuries that the astronauts may have while on the ship. Most of the equipment in the room appears to have been taken by the evacuated crew members. 
+The Observation Deck is to the East.
+
+You can see a scalpel here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0xe567940" />
+    </children>
+  </item>
+  <item nodeId="node-0xe567940">
+    <command xml:space="preserve">take scalpel</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x197bedf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x197bedf0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Observation Deck
+This is a room in the ship where people go to relax. It has some comfortable sofas for people to sit on, and they face a large plate of glass that acts as a window. If you look through the window, you can see the wing of the spaceship, as well as the infinite cosmos you have been traveled through for the last two years. 
+The Medical Bay is to the West. The Airlock is to the North. The Command Room is to the South, and the Maintenance Room is to the East.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x145430a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x145430a0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
+The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x18b40e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18b40e0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Mess Hall
@@ -555,21 +876,125 @@ You can see a kitchen door and an Astronaut here.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1034">YES</temporary>
+    <temporary score="1260">YES</temporary>
     <children>
-      <child nodeId="node-0x1008e060" />
+      <child nodeId="node-0x20d64730" />
     </children>
   </item>
-  <item nodeId="node-0x1008e060">
-    <command xml:space="preserve">give sandwich</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
+  <item nodeId="node-0x20d64730">
+    <command xml:space="preserve">lockpick door</command>
+    <result xml:space="preserve">You use the scalpel to lockpick the door. You hear a click, and the door opens.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1033">YES</temporary>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x19770d50" />
+    </children>
   </item>
-  <item nodeId="node-0x195a6770">
+  <item nodeId="node-0x19770d50">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the kitchen door)
+
+Kitchen
+The room where the head chef aboard the ship would prepare all of the meals for the crew members. It appears that most of the food and supplies have been taken by the crew members who left on the escape pods. You can see the refrigerator where the chef would keep all of his ingredients. 
+The Mess Hall is to the South.
+
+You can see a kitchen door here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x1450c030" />
+    </children>
+  </item>
+  <item nodeId="node-0x1450c030">
+    <command xml:space="preserve">open fridge</command>
+    <result xml:space="preserve">You open the refrigerator, revealing a sandwich.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x19768e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x19768e30">
+    <command xml:space="preserve">take sandwich</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x20d4b3a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20d4b3a0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables. 
+The Kitchen is to the North
+
+You can see a kitchen door and an Astronaut here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0xe5e5e70" />
+    </children>
+  </item>
+  <item nodeId="node-0xe5e5e70">
+    <command xml:space="preserve">give sandwich</command>
+    <result xml:space="preserve">(to the Astronaut)
+The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x197493b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x197493b0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Maintenance Room
+The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
+The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1260">YES</temporary>
+    <children>
+      <child nodeId="node-0x10079980" />
+    </children>
+  </item>
+  <item nodeId="node-0x10079980">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Mess Hall
+This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It&apos;s around breakfast time, so this room should be bustling with hungry crew members, but they&apos;ve all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables. 
+The Kitchen is to the North
+
+You can see a kitchen door and an Astronaut here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1259">YES</temporary>
+  </item>
+  <item nodeId="node-0x1662e690">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -579,14 +1004,14 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1243">YES</temporary>
+    <temporary score="1264">YES</temporary>
     <children>
-      <child nodeId="node-0x17db4e10" />
-      <child nodeId="node-0x1957be40" />
-      <child nodeId="node-0x1974a470" />
+      <child nodeId="node-0x1450cae0" />
+      <child nodeId="node-0x166c9d10" />
+      <child nodeId="node-0x16696220" />
     </children>
   </item>
-  <item nodeId="node-0x1974a470">
+  <item nodeId="node-0x16696220">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Medical Bay
@@ -600,10 +1025,10 @@ You can see a scalpel here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197ef3b0" />
+      <child nodeId="node-0x16696270" />
     </children>
   </item>
-  <item nodeId="node-0x197ef3b0">
+  <item nodeId="node-0x16696270">
     <command xml:space="preserve">take scalpel</command>
     <result xml:space="preserve">Taken.
 
@@ -612,10 +1037,10 @@ You can see a scalpel here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x166e87e0" />
+      <child nodeId="node-0x166962e0" />
     </children>
   </item>
-  <item nodeId="node-0x166e87e0">
+  <item nodeId="node-0x166962e0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Observation Deck
@@ -627,10 +1052,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x19576ae0" />
+      <child nodeId="node-0x166a8750" />
     </children>
   </item>
-  <item nodeId="node-0x19576ae0">
+  <item nodeId="node-0x166a8750">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -642,10 +1067,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197855d0" />
+      <child nodeId="node-0x166a87a0" />
     </children>
   </item>
-  <item nodeId="node-0x197855d0">
+  <item nodeId="node-0x166a87a0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Mess Hall
@@ -659,10 +1084,10 @@ You can see a kitchen door and an Astronaut here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x17d012f0" />
+      <child nodeId="node-0x166a8810" />
     </children>
   </item>
-  <item nodeId="node-0x17d012f0">
+  <item nodeId="node-0x166a8810">
     <command xml:space="preserve">lockpick door</command>
     <result xml:space="preserve">You use the scalpel to lockpick the door. You hear a click, and the door opens.
 
@@ -671,10 +1096,10 @@ You can see a kitchen door and an Astronaut here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x17d31fe0" />
+      <child nodeId="node-0x16690550" />
     </children>
   </item>
-  <item nodeId="node-0x17d31fe0">
+  <item nodeId="node-0x16690550">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the kitchen door)
 
@@ -689,10 +1114,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197f57d0" />
+      <child nodeId="node-0x166905a0" />
     </children>
   </item>
-  <item nodeId="node-0x197f57d0">
+  <item nodeId="node-0x166905a0">
     <command xml:space="preserve">open fridge</command>
     <result xml:space="preserve">You open the refrigerator, revealing a sandwich.
 
@@ -701,10 +1126,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x19739f80" />
+      <child nodeId="node-0x16690610" />
     </children>
   </item>
-  <item nodeId="node-0x19739f80">
+  <item nodeId="node-0x16690610">
     <command xml:space="preserve">take sandwich</command>
     <result xml:space="preserve">Taken.
 
@@ -713,10 +1138,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x195d2f80" />
+      <child nodeId="node-0x16690f60" />
     </children>
   </item>
-  <item nodeId="node-0x195d2f80">
+  <item nodeId="node-0x16690f60">
     <command xml:space="preserve">take all</command>
     <result xml:space="preserve">There are none at all available!
 
@@ -725,10 +1150,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x1951bf70" />
+      <child nodeId="node-0x16690fb0" />
     </children>
   </item>
-  <item nodeId="node-0x1951bf70">
+  <item nodeId="node-0x16690fb0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -737,10 +1162,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197b60b0" />
+      <child nodeId="node-0x16691020" />
     </children>
   </item>
-  <item nodeId="node-0x197b60b0">
+  <item nodeId="node-0x16691020">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Mess Hall
@@ -754,10 +1179,10 @@ You can see a kitchen door and an Astronaut here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x14596a90" />
+      <child nodeId="node-0x166765b0" />
     </children>
   </item>
-  <item nodeId="node-0x14596a90">
+  <item nodeId="node-0x166765b0">
     <command xml:space="preserve">take all</command>
     <result xml:space="preserve">There are none at all available!
 
@@ -766,10 +1191,10 @@ You can see a kitchen door and an Astronaut here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x19500250" />
+      <child nodeId="node-0x16676600" />
     </children>
   </item>
-  <item nodeId="node-0x19500250">
+  <item nodeId="node-0x16676600">
     <command xml:space="preserve">give sandwich</command>
     <result xml:space="preserve">(to the Astronaut)
 The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.
@@ -779,10 +1204,10 @@ The astronaut gratefully accepts the sandwich, and begins eating. He finishes th
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x19505280" />
+      <child nodeId="node-0x16676670" />
     </children>
   </item>
-  <item nodeId="node-0x19505280">
+  <item nodeId="node-0x16676670">
     <command xml:space="preserve">talk to astronaut</command>
     <result xml:space="preserve">Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: 
 
@@ -793,10 +1218,10 @@ He offers you his space suit.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197b1ee0" />
+      <child nodeId="node-0x1667a0f0" />
     </children>
   </item>
-  <item nodeId="node-0x197b1ee0">
+  <item nodeId="node-0x1667a0f0">
     <command xml:space="preserve">take space suit</command>
     <result xml:space="preserve">Taken.
 
@@ -805,10 +1230,10 @@ He offers you his space suit.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x1957a320" />
+      <child nodeId="node-0x1667a160" />
     </children>
   </item>
-  <item nodeId="node-0x1957a320">
+  <item nodeId="node-0x1667a160">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -820,10 +1245,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197f7480" />
+      <child nodeId="node-0x1664ebb0" />
     </children>
   </item>
-  <item nodeId="node-0x197f7480">
+  <item nodeId="node-0x1664ebb0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -835,10 +1260,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x195d0b00" />
+      <child nodeId="node-0x1664ec00" />
     </children>
   </item>
-  <item nodeId="node-0x195d0b00">
+  <item nodeId="node-0x1664ec00">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Airlock
@@ -852,10 +1277,10 @@ You can see an Airlock Door and an oxygen tank here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197d70b0" />
+      <child nodeId="node-0x1664ec70" />
     </children>
   </item>
-  <item nodeId="node-0x197d70b0">
+  <item nodeId="node-0x1664ec70">
     <command xml:space="preserve">take tank</command>
     <result xml:space="preserve">Taken.
 
@@ -864,10 +1289,10 @@ You can see an Airlock Door and an oxygen tank here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197c2240" />
+      <child nodeId="node-0x1668d120" />
     </children>
   </item>
-  <item nodeId="node-0x197c2240">
+  <item nodeId="node-0x1668d120">
     <command xml:space="preserve">combine tank with suit</command>
     <result xml:space="preserve">You now have an oxygen enhanced space suit.
 
@@ -876,10 +1301,10 @@ You can see an Airlock Door and an oxygen tank here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x197aa6b0" />
+      <child nodeId="node-0x1668d170" />
     </children>
   </item>
-  <item nodeId="node-0x197aa6b0">
+  <item nodeId="node-0x1668d170">
     <command xml:space="preserve">wear suit</command>
     <result xml:space="preserve">You put on the oxygen enhanced space suit.
 
@@ -888,10 +1313,10 @@ You can see an Airlock Door and an oxygen tank here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x195e6a00" />
+      <child nodeId="node-0x1668d1e0" />
     </children>
   </item>
-  <item nodeId="node-0x195e6a00">
+  <item nodeId="node-0x1668d1e0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the Airlock Door)
 wing
@@ -913,10 +1338,10 @@ You can also see an Airlock Door here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x1979f5b0" />
+      <child nodeId="node-0x166c9c50" />
     </children>
   </item>
-  <item nodeId="node-0x1979f5b0">
+  <item nodeId="node-0x166c9c50">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Airlock
@@ -930,10 +1355,10 @@ You can see an Airlock Door here.
     <changed>NO</changed>
     <temporary score="1243">YES</temporary>
     <children>
-      <child nodeId="node-0x2035bee0" />
+      <child nodeId="node-0x166c9ca0" />
     </children>
   </item>
-  <item nodeId="node-0x2035bee0">
+  <item nodeId="node-0x166c9ca0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 wing
@@ -948,7 +1373,7 @@ You can also see an Airlock Door here.
     <changed>NO</changed>
     <temporary score="1242">YES</temporary>
   </item>
-  <item nodeId="node-0x1957be40">
+  <item nodeId="node-0x166c9d10">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Command Room
@@ -958,12 +1383,24 @@ The Observation Deck is to the North.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1128">YES</temporary>
+    <temporary score="1264">YES</temporary>
     <children>
-      <child nodeId="node-0x197a8c70" />
+      <child nodeId="node-0x16680870" />
+      <child nodeId="node-0x20dd3d20" />
     </children>
   </item>
-  <item nodeId="node-0x197a8c70">
+  <item nodeId="node-0x20dd3d20">
+    <command xml:space="preserve">x monitors</command>
+    <result xml:space="preserve">The monitors are showing the command room. You can see yourself as you stare at the monitors.
+
+The monitors are showing the command room. You can see yourself as you stare at the monitors, you also notice a book you didn&apos;t notice before behind the security officer&apos;s desk.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1263">YES</temporary>
+  </item>
+  <item nodeId="node-0x16680870">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Observation Deck
@@ -975,10 +1412,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197e8960" />
+      <child nodeId="node-0x166808c0" />
     </children>
   </item>
-  <item nodeId="node-0x197e8960">
+  <item nodeId="node-0x166808c0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Medical Bay
@@ -990,10 +1427,10 @@ The Observation Deck is to the East.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x16677280" />
+      <child nodeId="node-0x16680930" />
     </children>
   </item>
-  <item nodeId="node-0x16677280">
+  <item nodeId="node-0x16680930">
     <command xml:space="preserve">open locker</command>
     <result xml:space="preserve">It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind.
 
@@ -1002,10 +1439,10 @@ The Observation Deck is to the East.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x17d1d340" />
+      <child nodeId="node-0x16636be0" />
     </children>
   </item>
-  <item nodeId="node-0x17d1d340">
+  <item nodeId="node-0x16636be0">
     <command xml:space="preserve">take scalpel</command>
     <result xml:space="preserve">Taken.
 
@@ -1014,10 +1451,10 @@ The Observation Deck is to the East.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197b4210" />
+      <child nodeId="node-0x16636c30" />
     </children>
   </item>
-  <item nodeId="node-0x197b4210">
+  <item nodeId="node-0x16636c30">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1029,10 +1466,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x166f4ed0" />
+      <child nodeId="node-0x16636ca0" />
     </children>
   </item>
-  <item nodeId="node-0x166f4ed0">
+  <item nodeId="node-0x16636ca0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -1044,10 +1481,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x17d08a10" />
+      <child nodeId="node-0x166520a0" />
     </children>
   </item>
-  <item nodeId="node-0x17d08a10">
+  <item nodeId="node-0x166520a0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Mess Hall
@@ -1061,10 +1498,10 @@ You can see a kitchen door and an Astronaut here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197fb820" />
+      <child nodeId="node-0x166520f0" />
     </children>
   </item>
-  <item nodeId="node-0x197fb820">
+  <item nodeId="node-0x166520f0">
     <command xml:space="preserve">lockpick door</command>
     <result xml:space="preserve">You use the scalpel to lockpick the door. You hear a click, and the door opens.
 
@@ -1073,10 +1510,10 @@ You can see a kitchen door and an Astronaut here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197b73b0" />
+      <child nodeId="node-0x16652160" />
     </children>
   </item>
-  <item nodeId="node-0x197b73b0">
+  <item nodeId="node-0x16652160">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the kitchen door)
 
@@ -1091,10 +1528,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0xe502810" />
+      <child nodeId="node-0x1668f450" />
     </children>
   </item>
-  <item nodeId="node-0xe502810">
+  <item nodeId="node-0x1668f450">
     <command xml:space="preserve">open fridge</command>
     <result xml:space="preserve">You open the refrigerator, revealing a sandwich.
 
@@ -1103,10 +1540,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1e223140" />
+      <child nodeId="node-0x1668f4a0" />
     </children>
   </item>
-  <item nodeId="node-0x1e223140">
+  <item nodeId="node-0x1668f4a0">
     <command xml:space="preserve">take sand</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1115,10 +1552,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x19560e50" />
+      <child nodeId="node-0x1668f510" />
     </children>
   </item>
-  <item nodeId="node-0x19560e50">
+  <item nodeId="node-0x1668f510">
     <command xml:space="preserve">take sandwich</command>
     <result xml:space="preserve">Taken.
 
@@ -1127,10 +1564,10 @@ You can see a kitchen door here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x16690440" />
+      <child nodeId="node-0x1663fe80" />
     </children>
   </item>
-  <item nodeId="node-0x16690440">
+  <item nodeId="node-0x1663fe80">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Mess Hall
@@ -1144,10 +1581,10 @@ You can see a kitchen door and an Astronaut here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197d7f00" />
+      <child nodeId="node-0x1663fed0" />
     </children>
   </item>
-  <item nodeId="node-0x197d7f00">
+  <item nodeId="node-0x1663fed0">
     <command xml:space="preserve">give sandwich</command>
     <result xml:space="preserve">(to the Astronaut)
 The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.
@@ -1157,10 +1594,10 @@ The astronaut gratefully accepts the sandwich, and begins eating. He finishes th
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197d8330" />
+      <child nodeId="node-0x1663ff40" />
     </children>
   </item>
-  <item nodeId="node-0x197d8330">
+  <item nodeId="node-0x1663ff40">
     <command xml:space="preserve">talk to astronaut</command>
     <result xml:space="preserve">Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: 
 
@@ -1171,10 +1608,10 @@ He offers you his space suit.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197a8650" />
+      <child nodeId="node-0x166476f0" />
     </children>
   </item>
-  <item nodeId="node-0x197a8650">
+  <item nodeId="node-0x166476f0">
     <command xml:space="preserve">take space suit</command>
     <result xml:space="preserve">Taken.
 
@@ -1183,10 +1620,10 @@ He offers you his space suit.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x17d1e8c0" />
+      <child nodeId="node-0x16647740" />
     </children>
   </item>
-  <item nodeId="node-0x17d1e8c0">
+  <item nodeId="node-0x16647740">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -1198,10 +1635,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197dc7f0" />
+      <child nodeId="node-0x166477b0" />
     </children>
   </item>
-  <item nodeId="node-0x197dc7f0">
+  <item nodeId="node-0x166477b0">
     <command xml:space="preserve">wear space suit</command>
     <result xml:space="preserve">You put on the space suit.
 
@@ -1210,10 +1647,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197e4ac0" />
+      <child nodeId="node-0x14569c70" />
     </children>
   </item>
-  <item nodeId="node-0x197e4ac0">
+  <item nodeId="node-0x14569c70">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1225,10 +1662,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x16659680" />
+      <child nodeId="node-0x14569cc0" />
     </children>
   </item>
-  <item nodeId="node-0x16659680">
+  <item nodeId="node-0x14569cc0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Airlock
@@ -1242,10 +1679,10 @@ You can see an Airlock Door and an oxygen tank here.
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1e24fa30" />
+      <child nodeId="node-0x14569d30" />
     </children>
   </item>
-  <item nodeId="node-0x1e24fa30">
+  <item nodeId="node-0x14569d30">
     <command xml:space="preserve">open airlock door</command>
     <result xml:space="preserve">You open the airlock door and step out into space, but you suffocate without any oxygen to breathe.
 
@@ -1262,10 +1699,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197a8200" />
+      <child nodeId="node-0x1667a6b0" />
     </children>
   </item>
-  <item nodeId="node-0x197a8200">
+  <item nodeId="node-0x1667a6b0">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Airlock
 [Previous turn undone.]
@@ -1275,10 +1712,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1956e380" />
+      <child nodeId="node-0x1667a700" />
     </children>
   </item>
-  <item nodeId="node-0x1956e380">
+  <item nodeId="node-0x1667a700">
     <command xml:space="preserve">take oxygen tank</command>
     <result xml:space="preserve">Taken.
 
@@ -1287,10 +1724,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x195663c0" />
+      <child nodeId="node-0x1667a770" />
     </children>
   </item>
-  <item nodeId="node-0x195663c0">
+  <item nodeId="node-0x1667a770">
     <command xml:space="preserve">combine oxygen tank</command>
     <result xml:space="preserve">What do you want to combine the oxygen tank with?
 
@@ -1299,10 +1736,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x19500540" />
+      <child nodeId="node-0x166a5d90" />
     </children>
   </item>
-  <item nodeId="node-0x19500540">
+  <item nodeId="node-0x166a5d90">
     <command xml:space="preserve">space suit</command>
     <result xml:space="preserve">You now have an oxygen enhanced space suit.
 
@@ -1311,10 +1748,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197bb170" />
+      <child nodeId="node-0x166a5de0" />
     </children>
   </item>
-  <item nodeId="node-0x197bb170">
+  <item nodeId="node-0x166a5de0">
     <command xml:space="preserve">wear space suit</command>
     <result xml:space="preserve">You put on the oxygen enhanced space suit.
 
@@ -1323,10 +1760,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>NO</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x17d23cf0" />
+      <child nodeId="node-0x166a5e50" />
     </children>
   </item>
-  <item nodeId="node-0x17d23cf0">
+  <item nodeId="node-0x166a5e50">
     <command xml:space="preserve">open airlock</command>
     <result xml:space="preserve">wing
 You step through the airlock door and onto the wing of the spaceship. Even after spending two years flying through space, the wing is just as sleek and white as the day the ship blasted off from Earth. There is a small detachable antenna coming out of the wing.
@@ -1340,10 +1777,10 @@ You can also see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197496f0" />
+      <child nodeId="node-0x16682a20" />
     </children>
   </item>
-  <item nodeId="node-0x197496f0">
+  <item nodeId="node-0x16682a20">
     <command xml:space="preserve">open airlock door</command>
     <result xml:space="preserve">That&apos;s already open.
 
@@ -1352,10 +1789,10 @@ You can also see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x17dd5780" />
+      <child nodeId="node-0x16682a70" />
     </children>
   </item>
-  <item nodeId="node-0x17dd5780">
+  <item nodeId="node-0x16682a70">
     <command xml:space="preserve">close airlock door</command>
     <result xml:space="preserve">You close the Airlock Door.
 
@@ -1364,10 +1801,10 @@ You can also see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1e23a010" />
+      <child nodeId="node-0x16682ae0" />
     </children>
   </item>
-  <item nodeId="node-0x1e23a010">
+  <item nodeId="node-0x16682ae0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">(first opening the Airlock Door)
 wing
@@ -1388,10 +1825,10 @@ You can see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197dcb00" />
+      <child nodeId="node-0x16627910" />
     </children>
   </item>
-  <item nodeId="node-0x197dcb00">
+  <item nodeId="node-0x16627910">
     <command xml:space="preserve">open airlock door</command>
     <result xml:space="preserve">That&apos;s already open.
 
@@ -1400,10 +1837,10 @@ You can see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x19717090" />
+      <child nodeId="node-0x16627960" />
     </children>
   </item>
-  <item nodeId="node-0x19717090">
+  <item nodeId="node-0x16627960">
     <command xml:space="preserve">close airlock door</command>
     <result xml:space="preserve">You close the Airlock Door.
 
@@ -1412,10 +1849,10 @@ You can see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x166e11b0" />
+      <child nodeId="node-0x166279d0" />
     </children>
   </item>
-  <item nodeId="node-0x166e11b0">
+  <item nodeId="node-0x166279d0">
     <command xml:space="preserve">open airlock door</command>
     <result xml:space="preserve">wing
 You step through the airlock door and onto the wing of the spaceship. Even after spending two years flying through space, the wing is just as sleek and white as the day the ship blasted off from Earth. There is a small detachable antenna coming out of the wing.
@@ -1429,10 +1866,10 @@ You can also see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x195d8d60" />
+      <child nodeId="node-0x1665d9f0" />
     </children>
   </item>
-  <item nodeId="node-0x195d8d60">
+  <item nodeId="node-0x1665d9f0">
     <command xml:space="preserve">take antenna</command>
     <result xml:space="preserve">Taken.
 
@@ -1441,10 +1878,10 @@ You can also see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x19784840" />
+      <child nodeId="node-0x1665da40" />
     </children>
   </item>
-  <item nodeId="node-0x19784840">
+  <item nodeId="node-0x1665da40">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Airlock
@@ -1458,10 +1895,10 @@ You can see an Airlock Door here.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x17d1e300" />
+      <child nodeId="node-0x1665dab0" />
     </children>
   </item>
-  <item nodeId="node-0x17d1e300">
+  <item nodeId="node-0x1665dab0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1473,10 +1910,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x195001c0" />
+      <child nodeId="node-0x166346b0" />
     </children>
   </item>
-  <item nodeId="node-0x195001c0">
+  <item nodeId="node-0x166346b0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -1488,10 +1925,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x195c2a50" />
+      <child nodeId="node-0x16634700" />
     </children>
   </item>
-  <item nodeId="node-0x195c2a50">
+  <item nodeId="node-0x16634700">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1503,10 +1940,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x19548210" />
+      <child nodeId="node-0x16634770" />
     </children>
   </item>
-  <item nodeId="node-0x19548210">
+  <item nodeId="node-0x16634770">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -1518,20 +1955,20 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x195da740" />
+      <child nodeId="node-0x16633800" />
     </children>
   </item>
-  <item nodeId="node-0x195da740">
+  <item nodeId="node-0x16633800">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x2033a3a0" />
+      <child nodeId="node-0x16633850" />
     </children>
   </item>
-  <item nodeId="node-0x2033a3a0">
+  <item nodeId="node-0x16633850">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1543,10 +1980,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1977f960" />
+      <child nodeId="node-0x166338c0" />
     </children>
   </item>
-  <item nodeId="node-0x1977f960">
+  <item nodeId="node-0x166338c0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Command Room
@@ -1558,10 +1995,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x19797020" />
+      <child nodeId="node-0x145c7e60" />
     </children>
   </item>
-  <item nodeId="node-0x19797020">
+  <item nodeId="node-0x145c7e60">
     <command xml:space="preserve">open drawer</command>
     <result xml:space="preserve">It doesn&apos;t look like the security officer kept much in here, but you do see a wrench in the drawer.
 
@@ -1570,10 +2007,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1e2383d0" />
+      <child nodeId="node-0x145c7eb0" />
     </children>
   </item>
-  <item nodeId="node-0x1e2383d0">
+  <item nodeId="node-0x145c7eb0">
     <command xml:space="preserve">take wrench</command>
     <result xml:space="preserve">Taken.
 
@@ -1582,10 +2019,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1974da90" />
+      <child nodeId="node-0x145c7f20" />
     </children>
   </item>
-  <item nodeId="node-0x1974da90">
+  <item nodeId="node-0x145c7f20">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Command Room
 [Previous turn undone.]
@@ -1595,10 +2032,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x197dc510" />
+      <child nodeId="node-0x166965c0" />
     </children>
   </item>
-  <item nodeId="node-0x197dc510">
+  <item nodeId="node-0x166965c0">
     <command xml:space="preserve">take wrench</command>
     <result xml:space="preserve">Taken.
 
@@ -1607,10 +2044,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x195202c0" />
+      <child nodeId="node-0x16696610" />
     </children>
   </item>
-  <item nodeId="node-0x195202c0">
+  <item nodeId="node-0x16696610">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1622,10 +2059,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x195ed780" />
+      <child nodeId="node-0x16696680" />
     </children>
   </item>
-  <item nodeId="node-0x195ed780">
+  <item nodeId="node-0x16696680">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -1637,10 +2074,10 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="1128">YES</temporary>
     <children>
-      <child nodeId="node-0x1e261a40" />
+      <child nodeId="node-0x1450ca90" />
     </children>
   </item>
-  <item nodeId="node-0x1e261a40">
+  <item nodeId="node-0x1450ca90">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">Using the wrench and antenna, you repair the broken nitrogen compressor. The lights in the room have stopped flashing red, and you hear a voice come over the intercom. 
 ATTENTION! This is another UNSA broadcast. We have received a signal from your ship that your engine has been repaired and is no longer in any danger of exploding. Our rescue ships should now have enough time to reach you.
@@ -1658,7 +2095,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="1127">YES</temporary>
   </item>
-  <item nodeId="node-0x17db4e10">
+  <item nodeId="node-0x1450cae0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Airlock
@@ -1672,11 +2109,11 @@ You can see an Airlock Door and an oxygen tank here.
     <changed>NO</changed>
     <temporary score="1137">YES</temporary>
     <children>
-      <child nodeId="node-0x195cb8b0" />
-      <child nodeId="node-0x1e255d40" />
+      <child nodeId="node-0x16665800" />
+      <child nodeId="node-0x1450cb50" />
     </children>
   </item>
-  <item nodeId="node-0x1e255d40">
+  <item nodeId="node-0x1450cb50">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the Airlock Door)
 You open the airlock door and step out into space, but you suffocate without any oxygen to breathe.
@@ -1694,10 +2131,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="1137">YES</temporary>
     <children>
-      <child nodeId="node-0x16684ae0" />
+      <child nodeId="node-0x1664be10" />
     </children>
   </item>
-  <item nodeId="node-0x16684ae0">
+  <item nodeId="node-0x1664be10">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">Airlock
 [Previous turn undone.]
@@ -1707,10 +2144,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="1137">YES</temporary>
     <children>
-      <child nodeId="node-0x17d4b300" />
+      <child nodeId="node-0x1664be60" />
     </children>
   </item>
-  <item nodeId="node-0x17d4b300">
+  <item nodeId="node-0x1664be60">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1722,10 +2159,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1137">YES</temporary>
     <children>
-      <child nodeId="node-0x1955ff30" />
+      <child nodeId="node-0x1664bed0" />
     </children>
   </item>
-  <item nodeId="node-0x1955ff30">
+  <item nodeId="node-0x1664bed0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Medical Bay
@@ -1737,10 +2174,10 @@ The Observation Deck is to the East.
     <changed>YES</changed>
     <temporary score="1137">YES</temporary>
     <children>
-      <child nodeId="node-0x1034fd80" />
+      <child nodeId="node-0x16665740" />
     </children>
   </item>
-  <item nodeId="node-0x1034fd80">
+  <item nodeId="node-0x16665740">
     <command xml:space="preserve">open locker</command>
     <result xml:space="preserve">It appears that the most of the medicine and equipment has been taken, but you can see a scalpel and medical tubing that have been left behind.
 
@@ -1749,10 +2186,10 @@ The Observation Deck is to the East.
     <changed>YES</changed>
     <temporary score="1137">YES</temporary>
     <children>
-      <child nodeId="node-0x1667cd50" />
+      <child nodeId="node-0x16665790" />
     </children>
   </item>
-  <item nodeId="node-0x1667cd50">
+  <item nodeId="node-0x16665790">
     <command xml:space="preserve">take scalpel</command>
     <result xml:space="preserve">Taken.
 
@@ -1761,7 +2198,7 @@ The Observation Deck is to the East.
     <changed>YES</changed>
     <temporary score="1136">YES</temporary>
   </item>
-  <item nodeId="node-0x195cb8b0">
+  <item nodeId="node-0x16665800">
     <command xml:space="preserve">open airlock door</command>
     <result xml:space="preserve">fdsfd
 You open the airlock door and step out into space, but you suffocate without any oxygen to breathe.
@@ -1779,7 +2216,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="1041">YES</temporary>
   </item>
-  <item nodeId="node-0x1950e7f0">
+  <item nodeId="node-0x166548a0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1788,10 +2225,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x17db83b0" />
+      <child nodeId="node-0x166548f0" />
     </children>
   </item>
-  <item nodeId="node-0x17db83b0">
+  <item nodeId="node-0x166548f0">
     <command xml:space="preserve">ww</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -1800,10 +2237,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x17dd5f90" />
+      <child nodeId="node-0x16654960" />
     </children>
   </item>
-  <item nodeId="node-0x17dd5f90">
+  <item nodeId="node-0x16654960">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1815,10 +2252,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x10018db0" />
+      <child nodeId="node-0x166296d0" />
     </children>
   </item>
-  <item nodeId="node-0x10018db0">
+  <item nodeId="node-0x166296d0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Command Room
@@ -1830,10 +2267,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x17d82050" />
+      <child nodeId="node-0x16629720" />
     </children>
   </item>
-  <item nodeId="node-0x17d82050">
+  <item nodeId="node-0x16629720">
     <command xml:space="preserve">open drawer</command>
     <result xml:space="preserve">It doesn&apos;t look like the security officer kept much in here, but you do see a wrench in the drawer.
 
@@ -1842,10 +2279,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x17dd4c30" />
+      <child nodeId="node-0x16629790" />
     </children>
   </item>
-  <item nodeId="node-0x17dd4c30">
+  <item nodeId="node-0x16629790">
     <command xml:space="preserve">take wrench</command>
     <result xml:space="preserve">Taken.
 
@@ -1854,10 +2291,10 @@ The Observation Deck is to the North.
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x17dc1840" />
+      <child nodeId="node-0x16623be0" />
     </children>
   </item>
-  <item nodeId="node-0x17dc1840">
+  <item nodeId="node-0x16623be0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Observation Deck
@@ -1869,10 +2306,10 @@ The Medical Bay is to the West. The Airlock is to the North. The Command Room is
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x17d83e60" />
+      <child nodeId="node-0x16623c30" />
     </children>
   </item>
-  <item nodeId="node-0x17d83e60">
+  <item nodeId="node-0x16623c30">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Maintenance Room
@@ -1884,278 +2321,14 @@ The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the
     <changed>YES</changed>
     <temporary score="1011">YES</temporary>
     <children>
-      <child nodeId="node-0x17d313f0" />
+      <child nodeId="node-0x16623ca0" />
     </children>
   </item>
-  <item nodeId="node-0x17d313f0">
+  <item nodeId="node-0x16623ca0">
     <command xml:space="preserve">fix engine</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="1010">YES</temporary>
-  </item>
-  <item nodeId="node-0x17d73170">
-    <command xml:space="preserve">look under bed</command>
-    <result xml:space="preserve">You find the Auto-Mechanic you keep under your bed.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1031">YES</temporary>
-    <children>
-      <child nodeId="node-0x100b48f0" />
-      <child nodeId="node-0x100d6b00" />
-      <child nodeId="node-0x19762910" />
-    </children>
-  </item>
-  <item nodeId="node-0x19762910">
-    <command xml:space="preserve">take mech</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="978">YES</temporary>
-    <children>
-      <child nodeId="node-0x197733e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x197733e0">
-    <command xml:space="preserve">take auto</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="978">YES</temporary>
-    <children>
-      <child nodeId="node-0x17dc51b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x17dc51b0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Maintenance Room
-The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
-The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
-
-ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="978">YES</temporary>
-    <children>
-      <child nodeId="node-0x166a41a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x166a41a0">
-    <command xml:space="preserve">fix engine</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="977">YES</temporary>
-  </item>
-  <item nodeId="node-0x100d6b00">
-    <command xml:space="preserve">fix engine</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="932">YES</temporary>
-    <children>
-      <child nodeId="node-0x100d1b70" />
-    </children>
-  </item>
-  <item nodeId="node-0x100d1b70">
-    <command xml:space="preserve">fix engine debugger</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="932">YES</temporary>
-    <children>
-      <child nodeId="node-0x17d74290" />
-    </children>
-  </item>
-  <item nodeId="node-0x17d74290">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="932">YES</temporary>
-    <children>
-      <child nodeId="node-0x17df45e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x17df45e0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Maintenance Room
-The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
-The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
-
-ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="932">YES</temporary>
-    <children>
-      <child nodeId="node-0x10353d80" />
-    </children>
-  </item>
-  <item nodeId="node-0x10353d80">
-    <command xml:space="preserve">fix engine</command>
-    <result xml:space="preserve">You don&apos;t have the neccessary tools to fix the engine right now.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="932">YES</temporary>
-  </item>
-  <item nodeId="node-0x100b48f0">
-    <command xml:space="preserve">take auto</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1031">YES</temporary>
-    <children>
-      <child nodeId="node-0x100aed80" />
-      <child nodeId="node-0x17d8a1a0" />
-      <child nodeId="node-0x17d85bc0" />
-      <child nodeId="node-0x100716e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x100716e0">
-    <command xml:space="preserve">take auto mechanic</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="934">YES</temporary>
-  </item>
-  <item nodeId="node-0x17d85bc0">
-    <command xml:space="preserve">x auto mechanic</command>
-    <result xml:space="preserve">A device that when switched on, can be used to diagnose any problem that may occur with any type of engine, provided you are in the prescence of an engine.
-
-The Auto-Mechanic is currently switched off.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1031">YES</temporary>
-    <children>
-      <child nodeId="node-0x111032c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x111032c0">
-    <command xml:space="preserve">fix auto</command>
-    <result xml:space="preserve">That doesn&apos;t need to be fixed.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1031">YES</temporary>
-    <children>
-      <child nodeId="node-0x19755700" />
-    </children>
-  </item>
-  <item nodeId="node-0x19755700">
-    <command xml:space="preserve">x me</command>
-    <result xml:space="preserve">You are dressed in your UNSA engineers uniform. You have grown quite a long beard after being on this ship for two years without a razor or shaving cream.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1031">YES</temporary>
-    <children>
-      <child nodeId="node-0x1958aa10" />
-    </children>
-  </item>
-  <item nodeId="node-0x1958aa10">
-    <command xml:space="preserve">x player</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1030">YES</temporary>
-  </item>
-  <item nodeId="node-0x17d8a1a0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Maintenance Room
-The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. 
-The Crew&apos;s Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West.
-
-ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1017">YES</temporary>
-    <children>
-      <child nodeId="node-0x17dc7f10" />
-    </children>
-  </item>
-  <item nodeId="node-0x17dc7f10">
-    <command xml:space="preserve">fix engine</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1016">YES</temporary>
-    <children>
-      <child nodeId="node-0x17d1af60" />
-    </children>
-  </item>
-  <item nodeId="node-0x17d1af60">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Crew&apos;s Quarters
-This is the room you have shared with your fellow astronauts for the last two years. The room is large enough to fit the twenty or so beds needed to accomodate all of the astronauts on the ship. You don&apos;t have a bedside desk or anything like that, so you&apos;ve had to keep your things under your bed. 
-The Maintenance Room is to your west.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1000">YES</temporary>
-  </item>
-  <item nodeId="node-0x100aed80">
-    <command xml:space="preserve">drop</command>
-    <result xml:space="preserve">(the Auto-Mechanic)
-Dropped.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="940">YES</temporary>
-    <children>
-      <child nodeId="node-0xe5c0620" />
-    </children>
-  </item>
-  <item nodeId="node-0xe5c0620">
-    <command xml:space="preserve">take auto mech</command>
-    <result xml:space="preserve">I only understood you as far as wanting to take the Auto-Mechanic.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="940">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b7a710" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b7a710">
-    <command xml:space="preserve">take auto mechanic</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="939">YES</temporary>
   </item>
 </Skein>

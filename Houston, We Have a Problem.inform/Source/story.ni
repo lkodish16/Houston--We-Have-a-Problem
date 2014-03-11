@@ -26,6 +26,8 @@ Bedframe is scenery in the crew's quarters. "As with most military beds, the bed
 Instead of looking under the bed for the first time:
 	move the Auto-Mechanic to the Crew's Quarters;
 	say "You find the Auto-Mechanic you keep under your bed." 
+
+[Description changes once player has taken the auto-mechanic]
 	
 Instead of looking under the bed for more than the first time:
 	if the player is holding the Auto-Mechanic:
@@ -39,6 +41,8 @@ Understand "auto" as auto-mechanic.
 Understand "auto mechanic" as auto-mechanic.
 Understand "auto mech" as auto-mechanic.
 	
+[Auto-mechanic will only diagnose engine if player is in the maintenance room]
+
 After switching on Auto-Mechanic:
 	if the player is in the maintenance room:
 		say "The engine debugger shows that there is engine is suffering from a broken nitrogen compressor. It says it can be fixed with a wrench, and an antenna."
@@ -49,6 +53,8 @@ After switching on Auto-Mechanic:
 	
 The Maintenance Room is a room. It is west of the Crew's Quarters. "The room that holds the engine of the space ship. The lights are flashing red, giving the impression that something might have gone wrong with the engine. [line break]The Crew's Quarters are to the East. The Mess Hall is to the North, and the Observation Deck is to the West." 
 
+[A one time piece of text that will play the first time the player enters the maintenance room]
+
 The UNSA broadcast is a scene. The UNSA broadcast begins when the player has been in the maintenance room for one turn. When the UNSA broadcast begins, say "ATTENTION! This is a emergency UNSA brodcast. Most of your crewmates have safely evacuated the ship on escape pods, but if anyone is still aboard this ship, your engine has malfunctioned, and will explode unless it is fixed. We have sent a rescue team to save any crew members who may still be aboard the ship, but we predict the engine to explode before we can reach you, so you must fix the engine in order to give us enough time to save you.".
 
 The Spaceship Engine is scenery in the Maintenance Room. The description is "A standard UNSA spaceship engine. It takes up most of the room due to its size. There is a large 'United Nations Space Association' sticker placed in the middle of the engine. Upon further examining the engine, you can see that the nitrogen compressor is broken.". 
@@ -57,11 +63,15 @@ Understand "engine" as spaceship engine.
 
 The Mess Hall is a room. It is north of the Maintenance Room. "This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It's around breakfast time, so this room should be bustling with hungry crew members, but they've all left the ship. You thought you were the only person left on the ship, but you see a very hungry looking astronaut sitting down at one of the tables. [line break]The Kitchen is to the North" 
 
+[This piece of code was supposed to change the description of the room if the astronaut had taken the sandwich and was no longer hungry, but I wasn't able to get it working.]
+
 Instead of entering the Mess Hall:
 	if the astronaut is carrying the sandwich:
 		say "This is the room where the astronauts eat their meals. There are long table for eating, similar to what you would see in a school cafeteria. It's around breakfast time, so this room should be bustling with hungry crew members, but they've all escaped the ship. You thought you were the only person left on the ship, but you see an astronaut sitting down at one of the tables. [line break]The Kitchen is to the North". 
 
 The Astronaut is a man in the mess hall. The description is "The astronaut is clutching his stomach. You can hear it growling all the way from where you're standing. He's wearing a spacesuit, which would allow him to go outside of the ship if he wanted to.". 
+
+[Got this piece of code for adding a talk function from the inform handbook]
 
 Talking to is an action applying to one visible thing.
 Understand "talk to [someone]" or “converse with
@@ -74,6 +84,8 @@ Instead of talking to the astronaut:
 		say "Thank you so much. I thought I was going to starve for a second. I guess I owe you a spacesuit. Here you go: [line break][line break]He offers you his space suit.";
 		move space suit to the Mess Hall.
 		
+[Astronaut is also used to remove items from player after giving or combining since the player has no way of retrieving them from the astronaut.]		
+
 Instead of giving the sandwich to the astronaut:
 	say "The astronaut gratefully accepts the sandwich, and begins eating. He finishes the sandwich in just a few seconds.";
 	move sandwich to the astronaut.
@@ -84,8 +96,12 @@ The Kitchen is a room. It is north of the kitchen door. "The room where the head
 
 The Kitchen Door is a door. It is locked and lockable. The Kitchen door is north of the mess hall and south of the kitchen. The description is "A large steel door that is usually locked to prevent any crew members from taking any extra food after meal times."
 
+[Adds "lockpick" verb]
+
 Understand the command "lockpick" as something new.
 Lockpicking is an action applying to one thing. Understand "lockpick [something]" as lockpicking. 
+
+[Only the kitchen door can be lockpicked]
 
 Check lockpicking:
 	if the noun is the kitchen door:
@@ -95,10 +111,13 @@ Check lockpicking:
 Check lockpicking:
 	if the noun is not the kitchen door:
 		say "You can't lockpick that."
-		
+				
+[Adds "fix" verb]
 
 Understand the command "fix" as something new.
 Fixing is an action applying to one thing. Understand "fix [something]" as fixing.
+
+[Only engine can be fixed, and it can only fixed if the player is holding the wrench and antenna]
 
  Check fixing:
 	if the noun is the spaceship engine:
@@ -107,11 +126,15 @@ Fixing is an action applying to one thing. Understand "fix [something]" as fixin
 				say "Using the wrench and antenna, you repair the broken nitrogen compressor. The lights in the room have stopped flashing red, and you hear a voice come over the intercom. [line break]ATTENTION! This is another UNSA broadcast. We have received a signal from your ship that your engine has been repaired and is no longer in any danger of exploding. Our rescue ships should now have enough time to reach you.";
 				end the game in victory.
 
+[Player cannot fix the engine without holding the wrench and antenna]
+
 Check fixing:
 	if the noun is the spaceship engine:
 		if the player is not holding the antenna:
 			say "You don't have the necessary tools to fix that right now.".
 			
+[Player cannot fix anything that isn't the engine]
+
 Check fixing: 
 	if the noun is not the spaceship engine:
 		say "That's not broken."
@@ -127,6 +150,8 @@ The Observation Deck is a room. It is west of the Maintenance room. "This is a r
 The window is scenery in the observation deck. "You look through the window, staring out at the thousands of stars your ship passes by. You can see the wing of the spaceship, and you see an antenna planted on the wing."
 
 Understand "glass" as window. 
+
+[Search encompasses other verbs such as "look through", so i only need to put search to get those other synonyms to work as well]
 
 Instead of searching the window:
 	say "You look through the window, staring out at the thousands of stars your ship passes by. You can see the wing of the spaceship, and you see an antenna planted on the wing.".
@@ -146,6 +171,8 @@ Understand "drawer" as desk.
 After opening the desk for the first time:
 	say "It doesn't look like the security officer kept much in here, but you do see a wrench in the drawer."
 	
+[Description changes once player has taken wrench]	
+
 After opening the desk for more than the first time:
 	if the player is holding the wrench:
 		say "The wrench was all you found in the drawer."
@@ -153,6 +180,8 @@ After opening the desk for more than the first time:
 The wrench is a thing. It is inside the desk. "A tool normally used for twisting nuts and bolts."
 
 The Security Handbook is a thing. The description is "A textbook on basic security. The security officer must read this in his spare time.".
+
+[Adds "read" verb]
 
 Understand the command "read" as something new.
 Reading is an action applying to one thing. Understand "read [something]" as reading.
@@ -167,17 +196,25 @@ Check reading:
 		
 Understand "book" as security handbook.
 
+[Examining monitors brings security handbook into play]
+
 After examining the television monitors for the first time:
 	say "The monitors are showing the command room. You can see yourself as you stare at the monitors, you also notice a book you didn't notice before behind the security officer's desk.";
 	move the Security Handbook to the Command Room.
+	
+[Adds "combine" verb]
 
 Understand "combine [something] with [something]" as combining it with. Combining it with is an action applying to two carried things. Understand the command "connect" as "combine".
+
+["Attach will also have the same effect as "combine"]
 
 Understand the command "attach" as something new. Understand "attach [something] to [something]" as combining it with.
 
 The Airlock is a room. It is north of the Observation Deck. "This is the Airlock. The room where the astronauts on the ship must go through in order to enter space. The airlock door to the North leads to the wing of the spaceship. [line break]The Observation Deck is to the South.". 
 
 The Airlock Door is a door. The airlock door is north of the airlock and south of the wing. 
+
+[Opening airlock door automatically moves the player to the wing, provided they can survive in space]
 
 After opening the airlock door:
 	move the player to the wing.
@@ -196,11 +233,15 @@ Check opening the airlock door:
 
 The Wing is a room. It is north of the airlock door. "You step through the airlock door and onto the wing of the spaceship. Even after spending two years flying through space, the wing is just as sleek and white as the day the ship blasted off from Earth. There is a small detachable antenna coming out of the wing."
 
+[Room description changes once player has taken the antenna from the wing]
+
 Instead of entering the wing:
 	if player is holding the antenna:
 		say "You step out of the airlock and onto the wing of the spaceship. Even after spending two years flying through space, the wing is just as sleek and white as the day the ship blasted off from Earth.".
 
 The antenna is a thing. It is in the wing. "A small metal antenna that you found on the wing of the spaceship." 
+
+[Combine function code I got from Kaitlyn Poentis' "Stranded" source code]
 
 The combining it with action has an object called the item built.
 
