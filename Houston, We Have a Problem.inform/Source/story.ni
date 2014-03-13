@@ -93,6 +93,8 @@ The Kitchen Door is a door. It is locked and lockable. The Kitchen door is north
 Understand the command "lockpick" as something new.
 Lockpicking is an action applying to one thing. Understand "lockpick [something]" as lockpicking. 
 
+Understand "lock pick [something]" as lockpicking.
+
 [Only the kitchen door can be lockpicked]
 Check lockpicking:
 	if the noun is the kitchen door:
